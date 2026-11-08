@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#fcf8f7","tertiary":"#735c00","surface-container-low":"#f7f3f2","on-secondary-fixed":"#2d1419","inverse-on-surface":"#f4f0ef","on-secondary":"#ffffff","on-surface-variant":"#4d4547","secondary-fixed":"#ffd9de","on-secondary-fixed-variant":"#5e3e43","primary-container":"#24181c","on-secondary-container":"#7a585d","surface-container-highest":"#e5e2e1","primary-fixed-dim":"#d6c1c7","secondary-container":"#ffd2d8","on-primary-fixed-variant":"#514348","on-primary-container":"#917f84","on-tertiary":"#ffffff","background":"#fcf8f7","tertiary-container":"#cca730","secondary":"#78555b","on-tertiary-fixed":"#241a00","surface-variant":"#e5e2e1","surface-container":"#f1edec","tertiary-fixed-dim":"#e9c349","surface-container-lowest":"#ffffff","on-error-container":"#93000a","surface-bright":"#fcf8f7","surface-tint":"#6a5a5f","outline-variant":"#d0c3c6","primary":"#000000","error":"#ba1a1a","inverse-primary":"#d6c1c7","error-container":"#ffdad6","surface-container-high":"#ebe7e6","on-tertiary-fixed-variant":"#574500","on-background":"#1c1b1b","primary-fixed":"#f3dde3","on-surface":"#1c1b1b","on-primary-fixed":"#24181c","surface-dim":"#ddd9d8","outline":"#7f7477","tertiary-fixed":"#ffe088","secondary-fixed-dim":"#e7bcc1","inverse-surface":"#313030","on-tertiary-container":"#4f3d00","on-primary":"#ffffff","on-error":"#ffffff"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-xl":"2rem","margin":"1.25rem","gutter":"0.75rem","space-sm":"0.5rem","gutter-mobile":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin-mobile":"1rem"},fontFamily:{"headline-xl-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"price-display":["Playfair Display"],"headline-sm":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"headline-xl":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},fontSize:{"headline-xl-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"600"}],"price-display":["24px",{lineHeight:"28px",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}};</script><meta name="demo-screen" content="whatsapp"/><script src="../js/wire.js" defer></script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="px-6 pt-6 pb-5 flex flex-col gap-2"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px] text-secondary-fixed">spa</span></div><div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface block leading-none">Pétalo</span><span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-medium block mt-1">Atelier Chic Bogotá</span></div></div><div class="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_2px_8px_rgba(247,202,208,0.25)]"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Abierto · 3 especialistas en turno</span></div></div><div class="flex-1 overflow-y-auto px-4 py-2 space-y-6"><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Operaciones</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="agenda-de-hoy" href="#"><span class="material-symbols-outlined text-[20px]">today</span>Agenda de Hoy</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="calendario-y-horarios" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Calendario &amp; Horarios</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="citas-y-reservas" href="#"><span class="material-symbols-outlined text-[20px]">book_online</span>Citas &amp; Reservas</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Catálogo &amp; Equipo</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="servicios-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">dry_cleaning</span>Servicios y Precios</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="catalogo-de-disenos" href="#"><span class="material-symbols-outlined text-[20px]">palette</span>Catálogo de Diseños</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="especialistas-y-equipo" href="#"><span class="material-symbols-outlined text-[20px]">group</span>Especialistas &amp; Equipo</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Clientas &amp; Ventas</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="clientas-y-membresias" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span>Clientas &amp; Membresías</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="tienda-y-pedidos" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span>Tienda &amp; Pedidos</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="tarjetas-de-regalo" href="#"><span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>Tarjetas de Regalo</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Gestión</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="reportes-financieros" href="#"><span class="material-symbols-outlined text-[20px]">insights</span>Reportes Financieros</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="configuracion-del-atelier" href="#"><span class="material-symbols-outlined text-[20px]">tune</span>Configuración del Atelier</a></nav></div><div class="p-4 bg-surface-container/60 backdrop-blur-md"><div class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-lowest/90 shadow-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">visibility</span><span class="font-label-sm text-label-sm text-on-surface font-medium">Vista Atelier</span></div><button class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">Cambiar a Clienta</button></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-2xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-8 flex items-center justify-between"><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-tertiary text-[18px]">location_on</span><span class="font-label-md text-label-md font-medium">Atelier Calle 85, Bogotá</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><div class="flex items-center gap-5"><button class="relative p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-3 pl-3"><div class="text-right"><span class="font-label-md text-label-md text-on-surface font-semibold block leading-tight">Valentina Osorio</span><span class="font-label-sm text-label-sm text-secondary block">Atelier Owner</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative pt-16 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Subtle ambient decorative glow (contained) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 -right-16 w-96 h-96 bg-secondary-container/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 -left-20 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Editorial Overline & Top Bar -->
+<div class="pt-4 pb-6 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+<div class="space-y-1.5">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Gestión</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-semibold">Configuración del Atelier</span>
+</div>
+<div class="flex items-baseline gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Políticas &amp; Comunicaciones WhatsApp
+          </h1>
+<span class="hidden lg:inline-flex px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            Noviembre 2026 · Bogotá
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Administra las reglas de fidelización, márgenes de anticipo y automatización de concierge conversacional para el salón insignia en Calle 85.
+        </p>
+</div>
+<!-- Action & Global Status Capsule -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-surface-container-lowest shadow-sm backdrop-blur-md">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Meta Cloud API · Sincronizado</span>
+</div>
+<button class="group flex items-center gap-3 px-6 h-12 rounded-full bg-primary-container text-on-primary shadow-md hover:shadow-lg hover:scale-[1.01] active:scale-[0.98] transition-all" id="save-config-btn" type="button">
+<span class="font-label-lg text-label-lg tracking-wide text-on-primary">Guardar Configuración General</span>
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center transition-transform group-hover:translate-x-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Master Layout: 2 Equal Columns on Desktop -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start pb-8">
+<!-- ================= LEFT COLUMN: Políticas, Depósito & Pagos ================= -->
+<div class="flex flex-col gap-6">
+<!-- Card: Depósito Obligatorio de Reserva -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Depósito Obligatorio de Cita</span>
+<span class="font-label-sm text-label-sm text-outline">Garantía de silla por franja horaria</span>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+              Activo 100%
+            </span>
+</div>
+<!-- Value Input Block -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center p-4 rounded-DEFAULT bg-surface-container-low">
+<div class="sm:col-span-7">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1" for="deposit-amount">Monto de Anticipo (COP)</label>
+<div class="flex items-center gap-2 bg-surface-container-lowest rounded-md px-3 py-2 shadow-inner">
+<span class="font-price-display text-price-display text-primary">$</span>
+<input class="w-full bg-transparent font-price-display text-price-display text-on-surface focus:outline-none" id="deposit-amount" type="text" value="20.000"/>
+<span class="font-label-sm text-label-sm text-secondary font-medium">COP</span>
+</div>
+</div>
+<div class="sm:col-span-5 flex flex-col justify-center pl-1 sm:pl-3">
+<span class="font-label-md text-label-md text-on-surface font-semibold">~ $5.00 USD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Valor estandarizado para retención de turno en Calle 85.</span>
+</div>
+</div>
+<!-- Editorial Policy Note -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold">Nota legal a clientas:</strong> El depósito se descuenta automáticamente del total facturado del servicio en recepción o se retiene de forma irrevocable en caso de inasistencia o cancelación fuera de término.
+            </p>
+</div>
+<!-- Connected Gateway Section -->
+<div class="space-y-2 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Pasarelas Vinculadas &amp; Recaudo en Línea</span>
+<div class="flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block leading-none">Wompi + Nequi QR + PSE / Tarjetas</span>
+<span class="font-body-sm text-body-sm text-outline">Bancolombia API Token Activo · ID: #PTL-BOG-85</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest shadow-xs text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-semibold">Conectado</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Políticas de Cancelación & Reagendamiento -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Límites de Reagendamiento &amp; No-Show</span>
+<span class="font-label-sm text-label-sm text-outline">Garantías para el equipo de manicuristas</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Dropdown Limite -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low flex flex-col gap-2">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="limit-select">Cancelación sin penalidad</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest px-3 py-2 rounded-md font-label-md text-label-md text-on-surface pr-8 focus:outline-none shadow-xs" id="limit-select">
+<option selected="">12 horas antes</option>
+<option>24 horas antes</option>
+<option>48 horas antes</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reembolso 100% de anticipo a saldo a favor.</span>
+</div>
+<!-- Tolerancia de Gracia -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low flex flex-col gap-2">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tolerancia de Llegada</label>
+<div class="flex items-center justify-between bg-surface-container-lowest px-3 py-2 rounded-md shadow-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">15 minutos de gracia</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">hourglass_top</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Luego se reasigna la especialista libre.</span>
+</div>
+</div>
+<!-- Autonomous WhatsApp Rescheduling Toggle -->
+<div class="p-4 rounded-DEFAULT bg-surface-container-low flex items-start justify-between gap-4">
+<div class="space-y-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold block leading-tight">Reagendamiento Autónomo vía WhatsApp</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Permite a la clienta modificar su fecha y hora directamente desde el enlace encriptado de WhatsApp hasta 12h antes de la cita sin llamar al concierge.
+              </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggle-reschedule" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- No-Show Policy Callout -->
+<div class="p-4 rounded-DEFAULT bg-secondary-fixed/50 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">gavel</span>
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-secondary-fixed">Compensación de Especialistas</span>
+<p class="font-body-sm text-body-sm text-on-secondary-fixed-variant leading-relaxed">
+                En caso de no-show sin notificación, el depósito de <strong>COP 20.000</strong> se dispersa en un 80% como honorario compensatorio para la especialista en turno (<span class="font-medium">Valeria, Camila o Sofía</span>) y 20% costo administrativo.
+              </p>
+</div>
+</div>
+</div>
+<!-- Card: Información del Atelier Bogotá & Concierge -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Pétalo Atelier Bogotá</span>
+<span class="font-label-sm text-label-sm text-outline">Sede Principal · El Retiro / Chicó</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-semibold">
+              Calle 85
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<div class="p-3 rounded-DEFAULT bg-surface-container-low">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1">Dirección Oficial</span>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Calle 85 # 11-53, Local 202</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Zona T · Chicó Norte, Bogotá D.C.</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1">WhatsApp Concierge</span>
+<p class="font-label-md text-label-md text-on-surface font-semibold">+57 310 458 9201</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Cuenta Comercial Verificada</span>
+</div>
+</div>
+<!-- Specialists assigned list banner -->
+<div class="flex items-center justify-between p-3 rounded-DEFAULT bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="font-label-sm text-label-sm text-on-surface">Especialistas registradas en flujo:</span>
+</div>
+<div class="flex -space-x-1.5 overflow-hidden">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-semibold" title="Valeria Martínez">VM</span>
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-semibold" title="Camila Restrepo">CR</span>
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary-fixed-dim text-on-primary-fixed text-[10px] font-semibold" title="Sofía Gómez">SG</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT COLUMN: Editor de Plantillas & Previsualización ================= -->
+<div class="flex flex-col gap-6">
+<!-- Template Tabs Header Card -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-semibold">Motor Conversacional</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Plantillas Automáticas de WhatsApp</h2>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+              3 Flujos Activos
+            </span>
+</div>
+<!-- Horizontal Pill Tabs -->
+<div class="grid grid-cols-3 gap-1.5 p-1 rounded-full bg-surface-container-low">
+<button class="tab-trigger py-2 px-3 rounded-full font-label-sm text-label-sm text-center font-bold bg-secondary-container text-on-secondary-fixed shadow-xs transition-all" id="tab-btn-1" onclick="switchTemplate(1)" type="button">
+              1. Confirmación
+            </button>
+<button class="tab-trigger py-2 px-3 rounded-full font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" id="tab-btn-2" onclick="switchTemplate(2)" type="button">
+              2. Recordatorio 24h
+            </button>
+<button class="tab-trigger py-2 px-3 rounded-full font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" id="tab-btn-3" onclick="switchTemplate(3)" type="button">
+              3. Retoque (18-21d)
+            </button>
+</div>
+<!-- Dynamic Variable Chips Pill Matrix -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Variables Dinámicas (Haz clic para insertar)</span>
+<span class="font-body-sm text-body-sm text-secondary">Token Meta</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{nombre_clienta}')" type="button">
+                {nombre_clienta}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{servicio}')" type="button">
+                {servicio}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{diseño}')" type="button">
+                {diseño}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{fecha}')" type="button">
+                {fecha}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{hora}')" type="button">
+                {hora}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{especialista}')" type="button">
+                {especialista}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{saldo}')" type="button">
+                {saldo}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{direccion}')" type="button">
+                {direccion}
+              </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all hover:scale-105 active:scale-95 shadow-2xs" onclick="insertVariable('{enlace_gestion}')" type="button">
+                {enlace_gestion}
+              </button>
+</div>
+</div>
+<!-- Textarea Editor with Dynamic Live Update -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="template-editor">Cuerpo del Mensaje HSM (WhatsApp Business)</label>
+<span class="font-body-sm text-body-sm text-outline" id="char-counter">248 caracteres</span>
+</div>
+<textarea class="w-full rounded-DEFAULT p-3.5 bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-all shadow-inner leading-relaxed resize-none" id="template-editor" rows="5"></textarea>
+</div>
+<!-- Quick Action Buttons for the Message Template -->
+<div class="flex items-center justify-between pt-1">
+<button class="inline-flex items-center gap-1.5 text-secondary hover:text-on-surface font-label-sm text-label-sm transition-colors" onclick="resetCurrentTemplate()" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+              Restaurar versión aprobada
+            </button>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Plantilla Verificada por Meta</span>
+</div>
+</div>
+</div>
+<!-- Smartphone Device Live WhatsApp Preview -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-6 shadow-sm flex flex-col items-center gap-4">
+<div class="w-full flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">phone_iphone</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Simulador en Vivo</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">iOS 18 View</span>
+</div>
+<!-- Device Container -->
+<div class="w-full max-w-sm rounded-[2.5rem] p-3 shadow-xl bg-primary-container text-on-primary">
+<!-- Screen Area -->
+<div class="w-full rounded-[2rem] overflow-hidden bg-surface-container flex flex-col min-h-[460px] text-on-surface shadow-inner">
+<!-- WhatsApp Header -->
+<div class="bg-surface-container-high px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">arrow_back_ios</span>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">spa</span>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface block leading-tight">Pétalo Atelier</span>
+<span class="material-symbols-outlined text-tertiary text-[14px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary block leading-none text-[10px]">Cuenta de Empresa Oficial</span>
+</div>
+</div>
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+</div>
+<!-- Chat Background and Bubble Stream -->
+<div class="flex-1 p-4 flex flex-col justify-end space-y-3 bg-gradient-to-b from-surface to-surface-container-low">
+<!-- Date Pill -->
+<div class="self-center px-3 py-0.5 rounded-full bg-surface-container-highest/80 backdrop-blur-md shadow-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">HOY · 10:42 AM</span>
+</div>
+<!-- Verified Business Bubble -->
+<div class="self-start max-w-[90%] rounded-2xl rounded-tl-xs p-3.5 shadow-sm bg-surface-container-lowest text-on-surface space-y-2">
+<div class="flex items-center gap-1.5 pb-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Pétalo Atelier Chic</span>
+<span class="font-label-sm text-label-sm text-outline text-[10px]">Calle 85</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="chat-bubble-text">
+<!-- Text will be injected via JS based on selected template -->
+</p>
+<div class="flex items-center justify-end gap-1 pt-1 text-outline">
+<span class="font-label-sm text-label-sm text-[10px]">10:42 AM</span>
+<span class="material-symbols-outlined text-tertiary text-[14px]">done_all</span>
+</div>
+</div>
+<!-- Interactive WhatsApp Quick-Action Buttons (Native WhatsApp Cloud API format) -->
+<div class="flex flex-col gap-1.5 max-w-[90%] self-start w-full" id="quick-action-dock">
+<!-- Injected via switchTemplate JS -->
+</div>
+</div>
+<!-- Chat Input Bar Mock -->
+<div class="px-3 py-2 bg-surface-container-high flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">add</span>
+<div class="flex-1 bg-surface-container-lowest rounded-full px-3 py-1.5 flex items-center justify-between text-outline">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Escribe un mensaje...</span>
+<span class="material-symbols-outlined text-[16px]">sentiment_satisfied</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">mic</span>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-outline text-center">Previsualización fiel renderizada con variables simuladas (Camila Restrepo, Manicure Ruso).</span>
+</div>
+</div>
+</div>
+<!-- Atelier Specialists Micro-Roster Drawer (Bento Bottom Strip) -->
+<div class="mt-2 p-6 rounded-lg bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">airline_stops</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Turnos y Notificaciones a Especialistas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Las notificaciones internas se envían en simultáneo con copia al teléfono de Valentina Osorio.</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Valeria M. (Mesa 1)</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Camila R. (Mesa 2)</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Sofía G. (Cabina Spa)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification System (Appears upon saving) -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="save-toast">
+<div class="flex items-center gap-3 px-5 py-3.5 rounded-full bg-primary text-on-primary shadow-xl backdrop-blur-2xl">
+<span class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</span>
+<span class="font-label-md text-label-md text-on-primary">Configuración y plantillas WhatsApp sincronizadas exitosamente</span>
+</div>
+</div>
+<!-- Inline Micro-Interaction Script -->
+<script>
+    const templates = {
+      1: {
+        title: "Confirmación de Cita",
+        rawText: "Hola {nombre_clienta} ✨ Tu cita en Pétalo Atelier Bogotá está confirmada para el {fecha} a las {hora} con {especialista}. Servicio: {servicio}. Depósito recibido: COP 20.000. Saldo en salón: {saldo}. Te esperamos con un té de jazmín o mimosa de cortesía 🥂.",
+        simulatedText: "Hola <strong>Mariana</strong> ✨ Tu cita en Pétalo Atelier Bogotá está confirmada para el <strong>Jueves 19 Nov</strong> a las <strong>3:30 PM</strong> con <strong>Camila Restrepo</strong>. Servicio: <strong>Manicure Ruso Estructurado</strong>. Depósito recibido: COP 20.000. Saldo en salón: <strong>$110.000 COP</strong>. Te esperamos con un té de jazmín o mimosa de cortesía 🥂.",
+        buttons: [
+          { text: "Confirmar Asistencia", icon: "check_circle" },
+          { text: "Ver Ubicación Calle 85", icon: "location_on" },
+          { text: "Modificar Cita", icon: "edit_calendar" }
+        ]
+      },
+      2: {
+        title: "Recordatorio 24h Antes",
+        rawText: "Hola {nombre_clienta}, te recordamos tu cita de mañana a las {hora} con {especialista}. Recuerda que puedes reprogramar sin costo hasta 12h antes. ¿Confirmas tu asistencia?",
+        simulatedText: "Hola <strong>Mariana</strong>, te recordamos tu cita de mañana a las <strong>3:30 PM</strong> con <strong>Camila Restrepo</strong>. Recuerda que puedes reprogramar sin costo hasta 12h antes. ¿Confirmas tu asistencia?",
+        buttons: [
+          { text: "Sí, Asistiré Puntual", icon: "thumb_up" },
+          { text: "Reagendar Fecha", icon: "schedule" }
+        ]
+      },
+      3: {
+        title: "Aviso de Retoque (2-3 Semanas)",
+        rawText: "Hola {nombre_clienta} 🌸 Ya pasaron 18 días desde tu último manicure con {especialista}. Para proteger la salud de tu placa ungueal y mantener tus uñas impecables, te recomendamos agendar tu retoque aquí: {enlace_gestion}",
+        simulatedText: "Hola <strong>Mariana</strong> 🌸 Ya pasaron 18 días desde tu último manicure con <strong>Camila Restrepo</strong>. Para proteger la salud de tu placa ungueal y mantener tus uñas impecables, te recomendamos agendar tu retoque aquí: <span class='text-secondary font-medium underline'>petalo.co/retoque/m-982</span>",
+        buttons: [
+          { text: "Agendar Retoque Ahora", icon: "calendar_today" },
+          { text: "Hablar con Concierge", icon: "chat" }
+        ]
+      }
+    };
+
+    let activeTab = 1;
+    const editor = document.getElementById('template-editor');
+    const charCounter = document.getElementById('char-counter');
+    const bubble = document.getElementById('chat-bubble-text');
+    const actionDock = document.getElementById('quick-action-dock');
+
+    function renderPreview() {
+      const activeObj = templates[activeTab];
+      bubble.innerHTML = activeObj.simulatedText;
+      charCounter.innerText = `${editor.value.length} caracteres`;
+
+      // Render WhatsApp action buttons
+      actionDock.innerHTML = '';
+      activeObj.buttons.forEach(btn => {
+        const b = document.createElement('div');
+        b.className = 'w-full py-2 px-3 rounded-lg bg-surface-container-lowest shadow-2xs flex items-center justify-center gap-1.5 text-secondary hover:bg-surface-container transition-colors cursor-pointer text-center';
+        b.innerHTML = `<span class="material-symbols-outlined text-[16px]">${btn.icon}</span><span class="font-label-sm text-label-sm font-semibold">${btn.text}</span>`;
+        actionDock.appendChild(b);
+      });
+    }
+
+    function switchTemplate(id) {
+      activeTab = id;
+      // Update Tab Visuals
+      for (let i = 1; i <= 3; i++) {
+        const tabBtn = document.getElementById(`tab-btn-${i}`);
+        if (i === id) {
+          tabBtn.className = "tab-trigger py-2 px-3 rounded-full font-label-sm text-label-sm text-center font-bold bg-secondary-container text-on-secondary-fixed shadow-xs transition-all";
+        } else {
+          tabBtn.className = "tab-trigger py-2 px-3 rounded-full font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all";
+        }
+      }
+
+      editor.value = templates[id].rawText;
+      renderPreview();
+    }
+
+    function insertVariable(variableToken) {
+      const start = editor.selectionStart;
+      const end = editor.selectionEnd;
+      const text = editor.value;
+      editor.value = text.substring(0, start) + variableToken + text.substring(end);
+      editor.focus();
+      editor.selectionStart = editor.selectionEnd = start + variableToken.length;
+      charCounter.innerText = `${editor.value.length} caracteres`;
+    }
+
+    function resetCurrentTemplate() {
+      editor.value = templates[activeTab].rawText;
+      renderPreview();
+    }
+
+    editor.addEventListener('input', () => {
+      charCounter.innerText = `${editor.value.length} caracteres`;
+      // Soft replacement simulation for preview
+      let dynamicSim = editor.value
+        .replace(/{nombre_clienta}/g, '<strong>Mariana</strong>')
+        .replace(/{fecha}/g, '<strong>Jueves 19 Nov</strong>')
+        .replace(/{hora}/g, '<strong>3:30 PM</strong>')
+        .replace(/{especialista}/g, '<strong>Camila Restrepo</strong>')
+        .replace(/{servicio}/g, '<strong>Manicure Ruso</strong>')
+        .replace(/{diseño}/g, '<strong>Glazed Donut</strong>')
+        .replace(/{saldo}/g, '<strong>$110.000 COP</strong>')
+        .replace(/{direccion}/g, 'Calle 85 # 11-53')
+        .replace(/{enlace_gestion}/g, '<span class="text-secondary font-medium underline">petalo.co/gestion</span>');
+      bubble.innerHTML = dynamicSim;
+    });
+
+    // Save notification interaction
+    document.getElementById('save-config-btn').addEventListener('click', () => {
+      const toast = document.getElementById('save-toast');
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-32', 'opacity-0');
+      }, 3500);
+    });
+
+    // Initialize initial state
+    switchTemplate(1);
+  </script>
+</div></main></div></body></html>

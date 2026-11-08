@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pétalo Nail Studio · Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shell.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="app">
+  <aside class="rail">
+    <div class="logo"><span>Pétalo</span><small>Nail Studio · Demo</small></div>
+    <div class="mode" role="tablist">
+      <button id="mCliente" role="tab">App de la clienta</button>
+      <button id="mDuena" role="tab">Panel de la dueña</button>
+    </div>
+    <nav class="list" id="list" aria-label="Pantallas"></nav>
+    <div class="tip" id="tip"></div>
+    <p class="foot">Prototipo con salón ficticio. Pagos, mensajes y datos son de ejemplo.</p>
+  </aside>
+  <main class="stage" id="stage">
+    <div class="device" id="device"><div class="notch"></div><iframe id="frame" title="Pantalla de la demo"></iframe></div>
+  </main>
+</div>
+<script src="js/shell.js"></script>
+</body>
+</html>

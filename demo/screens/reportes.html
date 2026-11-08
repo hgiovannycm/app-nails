@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#fcf8f7","tertiary":"#735c00","surface-container-low":"#f7f3f2","on-secondary-fixed":"#2d1419","inverse-on-surface":"#f4f0ef","on-secondary":"#ffffff","on-surface-variant":"#4d4547","secondary-fixed":"#ffd9de","on-secondary-fixed-variant":"#5e3e43","primary-container":"#24181c","on-secondary-container":"#7a585d","surface-container-highest":"#e5e2e1","primary-fixed-dim":"#d6c1c7","secondary-container":"#ffd2d8","on-primary-fixed-variant":"#514348","on-primary-container":"#917f84","on-tertiary":"#ffffff","background":"#fcf8f7","tertiary-container":"#cca730","secondary":"#78555b","on-tertiary-fixed":"#241a00","surface-variant":"#e5e2e1","surface-container":"#f1edec","tertiary-fixed-dim":"#e9c349","surface-container-lowest":"#ffffff","on-error-container":"#93000a","surface-bright":"#fcf8f7","surface-tint":"#6a5a5f","outline-variant":"#d0c3c6","primary":"#000000","error":"#ba1a1a","inverse-primary":"#d6c1c7","error-container":"#ffdad6","surface-container-high":"#ebe7e6","on-tertiary-fixed-variant":"#574500","on-background":"#1c1b1b","primary-fixed":"#f3dde3","on-surface":"#1c1b1b","on-primary-fixed":"#24181c","surface-dim":"#ddd9d8","outline":"#7f7477","tertiary-fixed":"#ffe088","secondary-fixed-dim":"#e7bcc1","inverse-surface":"#313030","on-tertiary-container":"#4f3d00","on-primary":"#ffffff","on-error":"#ffffff"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-xl":"2rem","margin":"1.25rem","gutter":"0.75rem","space-sm":"0.5rem","gutter-mobile":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin-mobile":"1rem"},fontFamily:{"headline-xl-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"price-display":["Playfair Display"],"headline-sm":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"headline-xl":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},fontSize:{"headline-xl-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"600"}],"price-display":["24px",{lineHeight:"28px",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}};</script><meta name="demo-screen" content="reportes"/><script src="../js/wire.js" defer></script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="px-6 pt-6 pb-5 flex flex-col gap-2"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px] text-secondary-fixed">spa</span></div><div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface block leading-none">Pétalo</span><span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-medium block mt-1">Atelier Chic Bogotá</span></div></div><div class="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_2px_8px_rgba(247,202,208,0.25)]"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Abierto · 3 especialistas en turno</span></div></div><div class="flex-1 overflow-y-auto px-4 py-2 space-y-6"><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Operaciones</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="agenda-de-hoy" href="#"><span class="material-symbols-outlined text-[20px]">today</span>Agenda de Hoy</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="calendario-y-horarios" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Calendario &amp; Horarios</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="citas-y-reservas" href="#"><span class="material-symbols-outlined text-[20px]">book_online</span>Citas &amp; Reservas</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Catálogo &amp; Equipo</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="servicios-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">dry_cleaning</span>Servicios y Precios</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="catalogo-de-disenos" href="#"><span class="material-symbols-outlined text-[20px]">palette</span>Catálogo de Diseños</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="especialistas-y-equipo" href="#"><span class="material-symbols-outlined text-[20px]">group</span>Especialistas &amp; Equipo</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Clientas &amp; Ventas</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="clientas-y-membresias" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span>Clientas &amp; Membresías</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="tienda-y-pedidos" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span>Tienda &amp; Pedidos</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="tarjetas-de-regalo" href="#"><span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>Tarjetas de Regalo</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Gestión</span></div><a aria-current="page" class="flex items-center px-3 py-2 transition-all gap-3 bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]" data-path="reportes-financieros" href="#"><span class="material-symbols-outlined text-[20px]">insights</span>Reportes Financieros</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="configuracion-del-atelier" href="#"><span class="material-symbols-outlined text-[20px]">tune</span>Configuración del Atelier</a></nav></div><div class="p-4 bg-surface-container/60 backdrop-blur-md"><div class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-lowest/90 shadow-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">visibility</span><span class="font-label-sm text-label-sm text-on-surface font-medium">Vista Atelier</span></div><button class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">Cambiar a Clienta</button></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-2xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-8 flex items-center justify-between"><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-tertiary text-[18px]">location_on</span><span class="font-label-md text-label-md font-medium">Atelier Calle 85, Bogotá</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><div class="flex items-center gap-5"><button class="relative p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-3 pl-3"><div class="text-right"><span class="font-label-md text-label-md text-on-surface font-semibold block leading-tight">Valentina Osorio</span><span class="font-label-sm text-label-sm text-secondary block">Atelier Owner</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative pt-16 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 -left-36 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<!-- Header & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">
+<span>Gestión</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Reportes Financieros</span>
+<span class="text-outline">·</span>
+<span class="text-outline">Calle 85, Bogotá</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-none">
+          Finanzas &amp; Rendimiento del Atelier
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Consolidado contable auditado de Noviembre 2026. Desglose analítico de producción, margen por línea y balance de depósitos de garantía.
+        </p>
+</div>
+<!-- Filters & Primary Action -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<!-- Date Tabs Capsule -->
+<div class="inline-flex p-1 rounded-full bg-surface-container shadow-sm">
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Hoy</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Esta Semana</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm font-semibold" type="button">Noviembre 2026</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Personalizado</button>
+</div>
+<!-- Export CTA -->
+<button class="inline-flex items-center justify-between gap-3 px-5 py-2.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-black transition-all" type="button">
+<span>Descargar Reporte Contable</span>
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px]">file_download</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Bento Row (4 KPIs) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 pb-8">
+<!-- KPI 1: Ingresos Totales -->
+<div class="relative p-6 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.35)] flex flex-col justify-between overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Ingresos Totales (Nov)</span>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">COP 18.450.000</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">≈ $4.612 USD tasa representativa</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +18.4%
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs. Octubre (COP 15.58M)</span>
+</div>
+</div>
+<!-- KPI 2: Depósitos & Garantías -->
+<div class="relative p-6 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.35)] flex flex-col justify-between overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Depósitos &amp; Garantías</span>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">COP 3.860.000</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">≈ $965 USD recaudados online</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Ausencias: 3.2%
+          </span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">COP 160.000 retenidos</span>
+</div>
+</div>
+<!-- KPI 3: Ticket Promedio -->
+<div class="relative p-6 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.35)] flex flex-col justify-between overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Ticket Promedio Global</span>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">COP 92.500</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">≈ $23.10 USD por cita concluida</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Add-ons: COP 25K avg
+          </span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">+9.2% QoQ</span>
+</div>
+</div>
+<!-- KPI 4: Citas Finalizadas -->
+<div class="relative p-6 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.35)] flex flex-col justify-between overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Citas Atelier Finalizadas</span>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">214</span>
+<span class="font-label-md text-label-md text-outline">/ 221 agendadas</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">96.8% efectividad en cabinas</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Capacidad Calle 85: 91%</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.93 rating prom.
+          </span>
+</div>
+</div>
+</div>
+<!-- Main Visual Analytics Layout (Bento Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-8">
+<!-- Left Column: Daily Revenue Curve & No-Show Matrix (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-8">
+<!-- Revenue Trajectory Chart Card -->
+<div class="p-7 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curva Diaria de Facturación</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Noviembre 1 al 30, 2026 · Picos marcados jueves, viernes y sábados</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Pico Máx: COP 1.250.000 / día</span>
+</div>
+</div>
+<!-- Stylized Inline SVG Trend Chart -->
+<div class="relative w-full h-64 flex flex-col justify-end pt-4">
+<svg aria-label="Curva de ingresos diarios de Noviembre" class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 220">
+<defs>
+<lineargradient id="areaGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ffd2d8" stop-opacity="0.85"></stop>
+<stop offset="60%" stop-color="#f7cad0" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="lineStroke" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#78555b"></stop>
+<stop offset="50%" stop-color="#cca730"></stop>
+<stop offset="100%" stop-color="#24181c"></stop>
+</lineargradient>
+</defs>
+<!-- Subtle Horizontal Reference Guides -->
+<line stroke="#f1edec" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="30" y2="30"></line>
+<line stroke="#f1edec" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="90" y2="90"></line>
+<line stroke="#f1edec" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="150" y2="150"></line>
+<line stroke="#e5e2e1" stroke-width="1" x1="0" x2="700" y1="210" y2="210"></line>
+<!-- Fill Area under curve -->
+<path d="M 0 190
+                       C 40 185, 55 170, 75 140
+                       C 95 110, 115 175, 140 160
+                       C 165 145, 185 85, 210 75
+                       C 235 65, 255 150, 280 145
+                       C 305 140, 325 50, 350 42
+                       C 375 35, 395 130, 420 120
+                       C 445 110, 465 55, 490 48
+                       C 515 42, 535 140, 560 130
+                       C 585 120, 605 32, 630 25
+                       C 655 20, 675 70, 700 85
+                       L 700 210 L 0 210 Z" fill="url(#areaGradient)"></path>
+<!-- Trendline Curve -->
+<path d="M 0 190
+                       C 40 185, 55 170, 75 140
+                       C 95 110, 115 175, 140 160
+                       C 165 145, 185 85, 210 75
+                       C 235 65, 255 150, 280 145
+                       C 305 140, 325 50, 350 42
+                       C 375 35, 395 130, 420 120
+                       C 445 110, 465 55, 490 48
+                       C 515 42, 535 140, 560 130
+                       C 585 120, 605 32, 630 25
+                       C 655 20, 675 70, 700 85" fill="none" stroke="url(#lineStroke)" stroke-linecap="round" stroke-width="3"></path>
+<!-- Peak Highlight Points (Saturdays Nov 21 & 28) -->
+<circle cx="350" cy="42" fill="#cca730" r="5"></circle>
+<circle cx="350" cy="42" fill="none" r="9" stroke="#cca730" stroke-opacity="0.3" stroke-width="2"></circle>
+<circle cx="630" cy="25" fill="#78555b" r="5"></circle>
+<circle cx="630" cy="25" fill="none" r="10" stroke="#78555b" stroke-opacity="0.3" stroke-width="2"></circle>
+</svg>
+<!-- Chart Horizontal Axis Labels -->
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-3">
+<span>S1 (1-7 Nov)</span>
+<span>S2 (8-14 Nov)</span>
+<span class="text-secondary font-bold">S3 (15-21 Nov)</span>
+<span class="text-on-surface font-bold">S4 (22-28 Nov)</span>
+<span>Cierre (29-30)</span>
+</div>
+</div>
+<div class="mt-6 pt-4 grid grid-cols-3 gap-3 bg-surface-container-low/70 rounded-DEFAULT p-3">
+<div class="text-center">
+<span class="text-outline font-label-sm text-label-sm uppercase block">Día más concurrido</span>
+<span class="text-on-surface font-headline-sm text-headline-sm font-semibold">Sábados</span>
+<span class="text-secondary font-label-sm text-label-sm block mt-0.5">COP 1.18M prom.</span>
+</div>
+<div class="text-center">
+<span class="text-outline font-label-sm text-label-sm uppercase block">Horario Estelar</span>
+<span class="text-on-surface font-headline-sm text-headline-sm font-semibold">3 PM - 7 PM</span>
+<span class="text-tertiary font-label-sm text-label-sm block mt-0.5">99.4% ocupación</span>
+</div>
+<div class="text-center">
+<span class="text-outline font-label-sm text-label-sm uppercase block">Turno Matutino</span>
+<span class="text-on-surface font-headline-sm text-headline-sm font-semibold">9 AM - 12 PM</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block mt-0.5">Executive Express</span>
+</div>
+</div>
+</div>
+<!-- No-Shows vs. Deposit Protection Matrix Card -->
+<div class="p-7 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-5">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Depósitos de Garantía &amp; Ausencias</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Política de reserva activa: COP 20.000 de abono retenible por cancelación tardía (&lt;12h)</p>
+</div>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">214 citas evaluadas</span>
+</div>
+<!-- Multi-Segment Visual Bar -->
+<div class="space-y-2">
+<div class="h-3 w-full rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-variant" style="width: 90.2%" title="90.2% Citas Cumplidas"></div>
+<div class="h-full bg-tertiary-container" style="width: 6.6%" title="6.6% Reagendadas a Tiempo"></div>
+<div class="h-full bg-secondary" style="width: 3.2%" title="3.2% Ausencias"></div>
+</div>
+<div class="flex flex-wrap items-center justify-between font-label-sm text-label-sm pt-1 gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-variant"></span>
+<span class="text-on-surface font-semibold">193 Citas a tiempo (90.2%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="text-on-surface-variant">14 Reagendadas &gt;12h (6.6%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-secondary font-bold">7 No-shows (3.2%)</span>
+</div>
+</div>
+</div>
+<!-- Deposit Recovery Summary Glass Sub-card -->
+<div class="mt-6 p-4 rounded-DEFAULT bg-secondary-fixed/30 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">7 Depósitos Retenidos sin Reembolso</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">7 penalidades × COP 20.000 cubrieron el tiempo de mesa reservado</span>
+</div>
+</div>
+<div class="text-right whitespace-nowrap">
+<span class="font-price-display text-price-display text-on-secondary-fixed font-bold block">COP 140.000</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Compensación 100% abonada</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Ranked Top Services & Loyalty Donut (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Ranking de Servicios Más Rentables -->
+<div class="p-7 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col">
+<div class="flex items-center justify-between pb-5">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Servicios Más Rentables</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ranking por facturación neta &amp; margen bruto</p>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Top 5</span>
+</div>
+<div class="space-y-4">
+<!-- Service 1 -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<h3 class="font-headline-sm text-body-lg font-bold text-on-surface truncate">Acrílicas / Gel Sculpt</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">48 citas completadas</span>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">COP 6.240.000</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Margen 72%</span>
+</div>
+</div>
+<div class="mt-2.5 h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 72%"></div>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<h3 class="font-headline-sm text-body-lg font-bold text-on-surface truncate">Mani + Pedi Signature</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">42 citas completadas</span>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">COP 5.040.000</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Margen 68%</span>
+</div>
+</div>
+<div class="mt-2.5 h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 68%"></div>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<h3 class="font-headline-sm text-body-lg font-bold text-on-surface truncate">Manicure Semipermanente</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">65 citas (Mayor volumen)</span>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">COP 3.900.000</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Margen 81%</span>
+</div>
+</div>
+<div class="mt-2.5 h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary" style="width: 81%"></div>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">4</span>
+<h3 class="font-headline-sm text-body-lg font-bold text-on-surface truncate">Pedicure Spa Deluxe</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">34 citas completadas</span>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">COP 2.550.000</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Margen 65%</span>
+</div>
+</div>
+<div class="mt-2.5 h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim" style="width: 65%"></div>
+</div>
+</div>
+<!-- Service 5: Add-ons -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">5</span>
+<h3 class="font-headline-sm text-body-lg font-bold text-on-surface truncate">Diseños de Autor (Add-ons)</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">58 aplicaciones personalizadas</span>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">COP 1.450.000</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">+94% Margen</span>
+</div>
+</div>
+<div class="mt-2.5 h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 94%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Cohort Donut Visual (Nuevas vs Recurrentes) -->
+<div class="p-7 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col justify-between">
+<div class="flex items-center justify-between pb-4">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Clientas Nuevas vs. Recurrentes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Retención mensual Atelier Club</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">loyalty</span>
+</div>
+</div>
+<div class="flex items-center justify-center py-4 gap-6">
+<!-- Inline SVG Donut Chart -->
+<div class="relative w-36 h-36 flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Track -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#f1edec" stroke-width="12"></circle>
+<!-- 68% Recurrentes (Circumference ~238.76, 68% = 162.35) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#78555b" stroke-dasharray="162.35 238.76" stroke-linecap="round" stroke-width="12"></circle>
+<!-- 32% Nuevas (Circumference 32% = 76.4, offset = -162.35) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#cca730" stroke-dasharray="76.4 238.76" stroke-dashoffset="-162.35" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-none">68%</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Lealtad</span>
+</div>
+</div>
+<!-- Legend Details -->
+<div class="flex flex-col gap-3 min-w-0">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary flex-shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">68% Recurrentes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-4">146 citas concluidas</p>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container flex-shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">32% Nuevas Clientas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-4">68 captadas en Calle 85</p>
+</div>
+</div>
+</div>
+<!-- Highlight Club Banner -->
+<div class="mt-3 p-3.5 rounded-DEFAULT bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">diamond</span>
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface block">34 Socias Pétalo Club Activas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">COP 8.840.000 garantizados mes a mes</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">100% Renovadas</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Specialist Performance & Net Commission Cards -->
+<div class="pb-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-5">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Rendimiento por Especialista</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Comisiones, producción neta acumulada y satisfacción de clientas durante Noviembre 2026</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-outline">3 especialistas en turno</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Especialista 1: Valeria Martínez -->
+<div class="p-6 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Valeria Martínez, lead nail artist with warm studio lighting, neutral chic makeup, professional styling in Bogotá" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD1mjAfQuzikmAyPntTjSHARDBJGh-uw5JlhQnPAZcix3vNP89jcIpW0t1EYt80VdeYAJ4eEn-JHID-NyesKPj2j84C5FZK2Y-BcSuAmcKBlGzrtE8WyTJ6fwn2N1Tr5IL0Lx0cXZIPSJJkhsNqU6-I9MFvOs-pMjK6TfeIKfwD-qQKOptITkyrWX4yy6R2iD9ku8Sf25r643WsRYEBUxtBWw18_n0MqD0v8jPfjTY"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Valeria Martínez</h3>
+<span class="font-label-sm text-label-sm text-secondary block">Master Sculptor &amp; Gel</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.9
+              </div>
+</div>
+<!-- Key Specialist Metrics -->
+<div class="space-y-2 pt-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Citas Atendidas:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">82 citas</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Producción Neta:</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">COP 7.100.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Comisión Acumulada (40%):</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">COP 2.840.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Ticket Promedio Personal:</span>
+<span class="font-label-md text-label-md text-outline">COP 86.585</span>
+</div>
+</div>
+</div>
+<!-- Progress bar vs goal -->
+<div class="mt-6 pt-4 space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Cumplimiento de Meta Mensual</span>
+<span class="text-on-surface font-bold">118%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<!-- Especialista 2: Camila Restrepo -->
+<div class="p-6 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Camila Restrepo, senior nail artisan smiling serenely, dressed in elegant neutral beige linen atelier attire with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwfmRQjyqi2cin9MK18Q0jzXJV9haNm4zewo2-0N4PDOaWojYDfCll7NzUC9lMeTARHRaXCXvK4UVC4onUieAxQEupYURdRkR0VIP9vCoSO3U9cJSuOklzwfEpR36rPWTaj7gmMeYIdm9jD5zMvcHLDhflxSI43WGUtn6xo6i6_0LSS3r1XYflRD0lAepjGuKcSkuk75vV7F-Zl87U5rkUai4tc3j-15ugrxmheFVi"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Camila Restrepo</h3>
+<span class="font-label-sm text-label-sm text-secondary block">Senior Nail Artist &amp; Spa</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> 5.0
+              </div>
+</div>
+<!-- Key Specialist Metrics -->
+<div class="space-y-2 pt-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Citas Atendidas:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">71 citas</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Producción Neta:</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">COP 6.250.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Comisión Acumulada (40%):</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">COP 2.500.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Ticket Promedio Personal:</span>
+<span class="font-label-md text-label-md text-outline">COP 88.028</span>
+</div>
+</div>
+</div>
+<!-- Progress bar vs goal -->
+<div class="mt-6 pt-4 space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Cumplimiento de Meta Mensual</span>
+<span class="text-on-surface font-bold">104%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<!-- Especialista 3: Sofía Gómez -->
+<div class="p-6 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Sofía Gómez, talented beauty manicurist with aesthetic minimal jewelry and warm natural morning light in high-end Bogota salon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDQ_CMALi_Eghzm-570MXIw7GaZMqaPJqxgFalpWwZHkKqxP_iARivea6s0MviVyx_C2a8blJf8ieh-DILotTN-9EFQnl12sff3hKxLDCMrg3-qZW_LjTek8Ea-OAf2ZtJXp213vaxa3XIlISQOOAD6p1obm8osWTqopubp51bR6gPQuEmhQKDaFGV7eoC0Zu4NnoT4b2sEZlHp84XbBKS2-ajuIJpxmiNsH7W5NNm"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Sofía Gómez</h3>
+<span class="font-label-sm text-label-sm text-secondary block">Semipermanente &amp; Care</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.9
+              </div>
+</div>
+<!-- Key Specialist Metrics -->
+<div class="space-y-2 pt-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Citas Atendidas:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">61 citas</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Producción Neta:</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">COP 5.100.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Comisión Acumulada (40%):</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">COP 2.040.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Ticket Promedio Personal:</span>
+<span class="font-label-md text-label-md text-outline">COP 83.606</span>
+</div>
+</div>
+</div>
+<!-- Progress bar vs goal -->
+<div class="mt-6 pt-4 space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Cumplimiento de Meta Mensual</span>
+<span class="text-on-surface font-bold">93%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim" style="width: 93%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Atelier Owner Summary Stamp -->
+<div class="mt-4 p-6 rounded-lg bg-surface-container-low/90 backdrop-blur-xl flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block">Cierre de Período Noviembre 2026 Conciliado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auditado por Valentina Osorio · Sede Calle 85, Bogotá. Impuestos e IVA discriminados según DIAN.</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" type="button">
+          Exportar a Contabilidad (.XLSX)
+        </button>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface-variant transition-colors" type="button">
+          Cerrar Libros de Noviembre
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

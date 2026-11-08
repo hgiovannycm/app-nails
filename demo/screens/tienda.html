@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#1c1b1b", "inverse-surface": "#313030", "outline": "#7f7477", "surface-dim": "#ddd9d8", "on-secondary-container": "#7a585d", "secondary-fixed": "#ffd9de", "surface-container": "#f1edec", "error-container": "#ffdad6", "surface-tint": "#6a5a5f", "surface-container-highest": "#e5e2e1", "on-background": "#1c1b1b", "primary-fixed": "#f3dde3", "surface-bright": "#fcf8f7", "on-error": "#ffffff", "background": "#fcf8f7", "on-error-container": "#93000a", "inverse-primary": "#d6c1c7", "on-primary": "#ffffff", "secondary": "#78555b", "primary": "#000000", "on-tertiary-fixed": "#241a00", "on-surface-variant": "#4d4547", "on-tertiary-fixed-variant": "#574500", "secondary-container": "#ffd2d8", "secondary-fixed-dim": "#e7bcc1", "tertiary-fixed": "#ffe088", "surface-container-lowest": "#ffffff", "on-primary-container": "#917f84", "on-tertiary": "#ffffff", "inverse-on-surface": "#f4f0ef", "surface-container-high": "#ebe7e6", "on-secondary": "#ffffff", "on-tertiary-container": "#4f3d00", "primary-container": "#24181c", "surface": "#fcf8f7", "on-primary-fixed": "#24181c", "on-secondary-fixed": "#2d1419", "surface-variant": "#e5e2e1", "surface-container-low": "#f7f3f2", "error": "#ba1a1a", "primary-fixed-dim": "#d6c1c7", "tertiary-fixed-dim": "#e9c349", "outline-variant": "#d0c3c6", "on-secondary-fixed-variant": "#5e3e43", "tertiary-container": "#cca730", "tertiary": "#735c00", "on-primary-fixed-variant": "#514348" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "space-xl": "2rem", "gutter": "0.75rem", "space-xs": "0.25rem", "gutter-mobile": "0.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1.25rem" }, fontFamily: { "price-display": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"] }, fontSize: { "price-display": ["24px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#fcf8f7;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<meta name="demo-screen" content="tienda"/><script src="../js/wire.js" defer></script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-2xl pt-safe shadow-[0_4px_24px_-4px_rgba(247,202,208,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Pétalo</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary -mt-1">Nail Studio</span></div><div class="flex items-center gap-space-xs"><button aria-label="Bolsa de compras" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface transition-all active:scale-95"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-[18px] text-center font-bold shadow-[0_2px_8px_rgba(120,85,91,0.35)]">2</span></button><button aria-label="Notificaciones" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant transition-all active:scale-95"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-[0_2px_8px_rgba(0,0,0,0.15)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Aura -->
+<div class="relative w-full overflow-hidden px-margin-mobile pt-space-xs pb-space-lg flex flex-col gap-space-lg">
+<!-- Editorial Boutique Header -->
+<header class="flex flex-col gap-space-xs relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Édition Botanique</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/60 backdrop-blur-md">
+<span class="material-symbols-outlined text-[14px] text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Atelier Bogotá</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">Boutique Atelier</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[92%] leading-relaxed mt-1">
+          Fórmulas botánicas, cuidado de autor y rituales sensoriales para prolongar el lujo de tu cita en casa.
+        </p>
+</div>
+<!-- Tactile Search Bar with Quick Filter -->
+<div class="mt-space-xs relative flex items-center shadow-[0_8px_24px_-4px_rgba(247,202,208,0.28)] rounded-xl bg-surface-container-lowest/80 backdrop-blur-xl">
+<span class="material-symbols-outlined text-[20px] text-secondary ml-4">search</span>
+<input class="w-full bg-transparent py-3.5 pl-3 pr-12 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none" placeholder="Buscar fórmulas, óleos o sets..." type="text"/>
+<button aria-label="Filtrar" class="absolute right-2.5 w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</header>
+<!-- VIP Client Exclusive Benefit Ribbon Card -->
+<section class="relative overflow-hidden rounded-xl bg-gradient-to-br from-secondary-container via-surface-container-lowest to-surface-container-low shadow-[0_12px_32px_-6px_rgba(247,202,208,0.4)] p-space-md">
+<!-- Ambient light sparkle glyph -->
+<div class="absolute -right-4 -bottom-6 w-24 h-24 rounded-full bg-secondary-fixed/50 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px] text-on-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-container">Sofía Restrepo</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Membresía VIP Signature</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+          15% OFF ACTIVO
+        </span>
+</div>
+<div class="mt-space-md flex flex-col gap-1.5 relative z-10">
+<p class="font-headline-sm text-headline-sm text-on-surface">
+          Tu privilegio exclusivo de clienta
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          15% de cortesía aplicado automáticamente en toda la boutique. Además, tienes saldo vigente para redimir hoy:
+        </p>
+</div>
+<!-- Gift Card Balance Pill inside VIP Banner -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between bg-surface-container-lowest/80 backdrop-blur-md rounded-lg p-space-sm shadow-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed-dim/60 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px] text-secondary">redeem</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Saldo Gift Card disponible</span>
+<span class="font-price-display text-price-display text-on-surface text-[17px] leading-5">COP 100.000 <span class="font-body-sm text-body-sm font-normal text-secondary">(~$25 USD)</span></span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm active:scale-95 transition-transform">
+          Canjear
+        </button>
+</div>
+</section>
+<!-- Category Pills (Horizontal Glider) -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Categorías de Atelier</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18 Productos</span>
+</div>
+<!-- Negative bleed scroll track -->
+<div class="-mx-margin-mobile px-margin-mobile flex gap-2 overflow-x-auto no-scrollbar py-1">
+<!-- Chip: Active -->
+<button class="shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span class="font-label-md text-label-md">Todo (18)</span>
+</button>
+<!-- Chip: Inactive 1 -->
+<button class="shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface shadow-[0_4px_16px_-4px_rgba(247,202,208,0.2)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+<span class="font-label-md text-label-md">Óleos &amp; Cutícula</span>
+</button>
+<!-- Chip: Inactive 2 -->
+<button class="shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface shadow-[0_4px_16px_-4px_rgba(247,202,208,0.2)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">front_hand</span>
+<span class="font-label-md text-label-md">Cuidado de Manos</span>
+</button>
+<!-- Chip: Inactive 3 -->
+<button class="shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface shadow-[0_4px_16px_-4px_rgba(247,202,208,0.2)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">brush</span>
+<span class="font-label-md text-label-md">Press-On Nails</span>
+</button>
+<!-- Chip: Inactive 4 -->
+<button class="shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface shadow-[0_4px_16px_-4px_rgba(247,202,208,0.2)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">mode_heat</span>
+<span class="font-label-md text-label-md">Aromas de Atelier</span>
+</button>
+<!-- Chip: Inactive 5 -->
+<button class="shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface shadow-[0_4px_16px_-4px_rgba(247,202,208,0.2)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">featured_seasonal_and_gifts</span>
+<span class="font-label-md text-label-md">Tarjetas de Regalo</span>
+</button>
+</div>
+</section>
+<!-- Best Seller Hero Card (Bespoke Product Showcase) -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Pieza Icónica</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span> Más solicitado
+        </span>
+</div>
+<article class="relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_16px_36px_-6px_rgba(247,202,208,0.35)]">
+<!-- Product Imagery with Editorial Pill Badges -->
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container-low">
+<img alt="Óleo de Cutícula Rosa Francesa 30ml con pétalos de rosa natural" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqLoSk2DtUjO9AiDu3Jr1MzC1_Xl_aKyfH-B2Zvrnk6nWJTI1lgtK_G_xy26rGtVV_nJccmAvsy4ApcBTKZCRZpS27PU1JoRcGuQWfuDtYHm1993jxQCgN_1KcPKEmfUBAZk87q4dArgqb3HvTNgkazRndq3pjr2bQvkfQm-hoCb4sQZ3c1Psf2Aj6dL0ZCu4lVgfXV6pJM1TufqdFSjYfc_fye5ZJHCA8b01CJItN"/>
+<!-- Wishlist Heart Floating Pill -->
+<button aria-label="Guardar en favoritos" class="absolute top-3.5 right-3.5 w-10 h-10 rounded-full bg-surface-container-lowest/85 backdrop-blur-md flex items-center justify-center text-secondary shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<!-- Organic certification tag -->
+<div class="absolute bottom-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">eco</span>
+<span class="font-label-sm text-label-sm text-on-surface">100% Botánico · Prensado en frío</span>
+</div>
+</div>
+<!-- Details Sheet Container -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+              Bestseller Atelier
+            </span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold">5.0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(62 reseñas)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+              Óleo de Cutícula Rosa Francesa
+            </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant -mt-0.5">Frasco de Cristal &amp; Gotero Dorado · 30ml</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Con pétalos de rosa natural deshidratados, vitamina E pura y aceite de jojoba prensado en frío. Nutrición intensiva tras cada servicio de manicure para sellar la cutícula con brillo aterciopelado.
+          </p>
+<!-- Dual Currency & VIP Pricing Display -->
+<div class="flex items-end justify-between pt-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm line-through text-on-surface-variant/60">COP 65.000</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-fixed/50 text-secondary font-semibold">15% OFF VIP</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-display text-price-display text-on-surface">COP 55.250</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(~$14.00 USD)</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm">En stock en cabina</span>
+</div>
+</div>
+<!-- Dual Action Buttons: Add & Pickup on Next Appointment -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full h-14 rounded-full bg-primary text-on-primary flex items-center justify-between px-6 shadow-[0_12px_24px_-6px_rgba(0,0,0,0.25)] active:scale-[0.98] transition-all">
+<span class="font-label-lg text-label-lg font-semibold tracking-wide">Añadir a la Bolsa</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">keyboard_double_arrow_left</span>
+</div>
+</button>
+<button class="w-full h-12 rounded-full bg-secondary-container/70 backdrop-blur-md text-on-secondary-container flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">event_available</span>
+<span class="font-label-md text-label-md">Recoger en mi próxima cita (13 Oct)</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Boutique Products Grid (2 Columns Responsive) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Colección de Temporada</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curaduría de Atelier</h3>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-0.5 active:opacity-75">
+          Ver todos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Product Card 1 -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_20px_-4px_rgba(247,202,208,0.3)]">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img alt="Kit Ritual Manos de Seda crema botánica y sérum fortalecedor" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDExVYzywr6TLJ9hXli9pFVJifvyP0RILg5On0_jNUbXdOPosJ77a8EGT13vJyu-zozVMXqSXlRjXTlL19zKe6yF8HV_3291rqDMRu8g1aSuac156_mpa_x_4AlH9N2dhzGcqEk4TpndHwpsiLTrY_KEetGzhz6lTxuFj-S1dgI-_phHxm6UIhj-rKaJI9FCmORs5Nj6DJlM9dTHMsBHqLJ0b6APzPaDoNcl6V1hAHL"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-[10px]">
+              Ed. Limitada
+            </span>
+<button aria-label="Favorito" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[15px]">favorite</span>
+</button>
+</div>
+<div class="p-3 flex flex-col justify-between flex-grow gap-2">
+<div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">(34)</span>
+</div>
+<h4 class="font-headline-sm text-[15px] leading-tight text-on-surface line-clamp-1">Kit Manos de Seda</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-0.5">Crema 50ml + Sérum biotina vegetal.</p>
+</div>
+<div class="flex flex-col pt-1">
+<span class="font-body-sm text-[11px] line-through text-on-surface-variant/60">COP 120.000</span>
+<div class="flex items-center justify-between mt-0.5">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] text-on-surface leading-none font-bold">COP 102.000</span>
+<span class="font-body-sm text-[10px] text-secondary">VIP (~$25.50)</span>
+</div>
+<button aria-label="Añadir Kit Manos de Seda" class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_20px_-4px_rgba(247,202,208,0.3)]">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img alt="Press-On Nails Designer Box set hecho a mano con acabados cromo perla" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4dna8LBzRjdYBzdu01jMMYB21L9HrVDkzYoJWHIi6bHiIZjmPDEIo19zNqCLXr9PFVuyMOaYQshRG7t7a5MkO-lkFzvNco7uy5dTyskEyGm4LYpTWetry8Nudw146L0zLQNjgXhTQxLutDFHLL2SlGHepEZqxO-uZBS1i9mbXi28ah7HbHQRP1LOL-qCHWuzBlb8fmL_T-7kvGTb0-leIKmtxcB5rHLNqmf8m3D_8"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container/90 backdrop-blur-md text-on-secondary-container font-label-sm text-[10px]">
+              Couture Look
+            </span>
+<button aria-label="Favorito" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[15px]">favorite</span>
+</button>
+</div>
+<div class="p-3 flex flex-col justify-between flex-grow gap-2">
+<div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">5.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">(19)</span>
+</div>
+<h4 class="font-headline-sm text-[15px] leading-tight text-on-surface line-clamp-1">Press-On Nails Box</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-0.5">Set reutilizable cromo y estuche terciopelo.</p>
+</div>
+<div class="flex flex-col pt-1">
+<span class="font-body-sm text-[11px] line-through text-on-surface-variant/60">COP 150.000</span>
+<div class="flex items-center justify-between mt-0.5">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] text-on-surface leading-none font-bold">COP 127.500</span>
+<span class="font-body-sm text-[10px] text-secondary">VIP (~$32.00)</span>
+</div>
+<button aria-label="Añadir Press-On Nails Box" class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Wide Single Product Spotlight: Aroma Signature -->
+<article class="mt-space-xs flex flex-row rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)]">
+<div class="relative w-2/5 aspect-[4/5] bg-surface-container-low overflow-hidden shrink-0">
+<img alt="Vela y bruma de atelier pétalo sándalo jazmín higo blanco" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQsyOgudFpR87G2i4SMZrSlelQN5HSnJfqc6ZGXqyTotGYlL43sDxWX8cbSZNNRqD9Ll2Hob003XrtYf7HrXJkq1nqq9vCIjwQaWD8Io2tv3Fz-kqLQYD0IEas1Qa8zELXRnNl3HvGRCjRIvuh-B7SAVwfH2WJTCmvrEgkQYTfLC_NfkMuBJxGgdIIAQWf3TiywQ1x6PelbmDhjgEgS99iiIAvHow9js0M4xdFQ5mX"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-[9px]">
+            Aroma Signature
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between w-3/5">
+<div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">4.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">(28)</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface leading-snug">Vela &amp; Bruma Atelier</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-1">
+              Sándalo, jazmín silvestre e higo blanco. La esencia distintiva de nuestra cabina en Chicó.
+            </p>
+</div>
+<div class="flex items-end justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-body-sm text-[10px] line-through text-on-surface-variant/60">COP 85.000</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-bold">COP 72.250</span>
+<span class="font-body-sm text-[10px] text-secondary">VIP (~$18.00 USD)</span>
+</div>
+<button aria-label="Añadir Vela y Bruma" class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform">
+<span>Bolsa</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Bespoke Module: Gift Cards Digitales & Físicas -->
+<section class="relative overflow-hidden rounded-xl bg-gradient-to-tr from-surface-container-high via-surface-container-lowest to-surface-container p-space-md shadow-[0_12px_28px_-6px_rgba(247,202,208,0.3)]">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">card_giftcard</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gift Cards de Atelier</h3>
+<span class="font-label-sm text-label-sm text-secondary">Regala una experiencia sensorial</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Personaliza tu tarjeta física en estuche de lino o digital con entrega instantánea vía WhatsApp con dedicatoria de autor.
+      </p>
+<!-- Predefined Amount Selector -->
+<div class="grid grid-cols-3 gap-2 my-space-sm" id="gift-card-amounts">
+<button class="gc-amount-pill py-2.5 px-1 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-center transition-all focus:ring-0 active:scale-95 border-none" data-val="100">
+<span class="block font-bold text-[13px]">COP 100K</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant">(~$25 USD)</span>
+</button>
+<button class="gc-amount-pill py-2.5 px-1 rounded-xl bg-primary text-on-primary shadow-md font-label-md text-center transition-all focus:ring-0 active:scale-95 border-none" data-val="200">
+<span class="block font-bold text-[13px]">COP 200K</span>
+<span class="block font-label-sm text-[9px] text-on-primary-container">(~$50 USD)</span>
+</button>
+<button class="gc-amount-pill py-2.5 px-1 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-center transition-all focus:ring-0 active:scale-95 border-none" data-val="350">
+<span class="block font-bold text-[13px]">COP 350K</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant">(~$88 USD)</span>
+</button>
+</div>
+<button class="w-full h-11 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-all shadow-sm">
+<span class="material-symbols-outlined text-[17px]">send</span>
+<span>Comprar Tarjeta de Regalo</span>
+</button>
+</section>
+<!-- Delivery Logistics & Clean Beauty Atelier Guarantee -->
+<section class="flex flex-col gap-2.5 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-space-md shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Compromiso y Envíos</span>
+<div class="flex items-start gap-3 py-1.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[17px] text-secondary">storefront</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Recogida sin costo en Atelier Calle 85</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tu pedido te esperará empacado en tu cita de manicura del 13 de Octubre.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 py-1.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[17px] text-secondary">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Envío Express Same-Day Bogotá</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">COP 12.000 · Gratis para compras superiores a COP 180.000.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 py-1.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[17px] text-secondary">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Pureza Garantizada: 10-Free &amp; Cruelty-Free</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Libre de tolueno, formaldehído, DBP y parabenos. Apto para pieles sensibles.</span>
+</div>
+</div>
+</section>
+<!-- Floating Bag Quick Access Bar (Tactile Liquid Glass Pill) -->
+<div class="sticky bottom-4 z-30 w-full">
+<div class="w-full flex items-center justify-between p-2 pl-4 rounded-full bg-primary/95 text-on-primary backdrop-blur-2xl shadow-[0_16px_36px_rgba(0,0,0,0.35)]">
+<div class="flex items-center gap-3">
+<div class="relative w-9 h-9 rounded-full bg-surface-container-lowest/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-on-primary">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] leading-4 text-center font-bold">2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container leading-none">Subtotal Bolsa</span>
+<span class="font-price-display text-[16px] text-on-primary font-bold leading-tight">COP 157.250 <span class="text-[11px] font-normal text-surface-dim">(VIP)</span></span>
+</div>
+</div>
+<button class="h-11 px-5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-transform shadow-md">
+<span>Ver Bolsa</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Ensure the bottom navigation bar highlights 'Tienda'
+  (function initActiveTab() {
+    const tiendaTab = document.querySelector('nav a[data-path="tienda"]');
+    if (tiendaTab) {
+      // Clear defaults from others
+      document.querySelectorAll('nav a').forEach(a => {
+        a.classList.remove('text-secondary', 'font-semibold');
+        a.classList.add('text-on-surface-variant');
+      });
+      // Style active tab
+      tiendaTab.classList.remove('text-on-surface-variant');
+      tiendaTab.classList.add('text-secondary', 'font-semibold');
+      const icon = tiendaTab.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+
+    // Gift card amount interactive selection
+    const gcButtons = document.querySelectorAll('.gc-amount-pill');
+    gcButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        gcButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          const sub = b.querySelector('span:last-child');
+          if (sub) {
+            sub.classList.remove('text-on-primary-container');
+            sub.classList.add('text-on-surface-variant');
+          }
+        });
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+        const subActive = btn.querySelector('span:last-child');
+        if (subActive) {
+          subActive.classList.remove('text-on-surface-variant');
+          subActive.classList.add('text-on-primary-container');
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_-8px_32px_rgba(247,202,208,0.35)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="disenos" href="#"><span class="material-symbols-outlined text-[22px]">palette</span><span class="font-label-sm text-label-sm">Diseños</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="reservar" href="#"><div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shadow-[0_8px_20px_rgba(247,202,208,0.6)]"><span class="material-symbols-outlined text-on-secondary-container text-[24px]">calendar_month</span></div><span class="font-label-sm text-label-sm text-on-surface mt-1">Reservar</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="tienda" href="#"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="font-label-sm text-label-sm">Tienda</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm">Perfil</span></a></div></nav></body></html>

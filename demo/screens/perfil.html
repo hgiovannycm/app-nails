@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#1c1b1b", "inverse-surface": "#313030", "outline": "#7f7477", "surface-dim": "#ddd9d8", "on-secondary-container": "#7a585d", "secondary-fixed": "#ffd9de", "surface-container": "#f1edec", "error-container": "#ffdad6", "surface-tint": "#6a5a5f", "surface-container-highest": "#e5e2e1", "on-background": "#1c1b1b", "primary-fixed": "#f3dde3", "surface-bright": "#fcf8f7", "on-error": "#ffffff", "background": "#fcf8f7", "on-error-container": "#93000a", "inverse-primary": "#d6c1c7", "on-primary": "#ffffff", "secondary": "#78555b", "primary": "#000000", "on-tertiary-fixed": "#241a00", "on-surface-variant": "#4d4547", "on-tertiary-fixed-variant": "#574500", "secondary-container": "#ffd2d8", "secondary-fixed-dim": "#e7bcc1", "tertiary-fixed": "#ffe088", "surface-container-lowest": "#ffffff", "on-primary-container": "#917f84", "on-tertiary": "#ffffff", "inverse-on-surface": "#f4f0ef", "surface-container-high": "#ebe7e6", "on-secondary": "#ffffff", "on-tertiary-container": "#4f3d00", "primary-container": "#24181c", "surface": "#fcf8f7", "on-primary-fixed": "#24181c", "on-secondary-fixed": "#2d1419", "surface-variant": "#e5e2e1", "surface-container-low": "#f7f3f2", "error": "#ba1a1a", "primary-fixed-dim": "#d6c1c7", "tertiary-fixed-dim": "#e9c349", "outline-variant": "#d0c3c6", "on-secondary-fixed-variant": "#5e3e43", "tertiary-container": "#cca730", "tertiary": "#735c00", "on-primary-fixed-variant": "#514348" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "space-xl": "2rem", "gutter": "0.75rem", "space-xs": "0.25rem", "gutter-mobile": "0.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1.25rem" }, fontFamily: { "price-display": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"] }, fontSize: { "price-display": ["24px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#fcf8f7;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <meta name="demo-screen" content="perfil"/><script src="../js/wire.js" defer></script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-2xl pt-safe shadow-[0_4px_24px_-4px_rgba(247,202,208,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Pétalo</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary -mt-1">Nail Studio</span></div><div class="flex items-center gap-space-xs"><button aria-label="Bolsa de compras" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface transition-all active:scale-95"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-[18px] text-center font-bold shadow-[0_2px_8px_rgba(120,85,91,0.35)]">2</span></button><button aria-label="Notificaciones" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant transition-all active:scale-95"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-[0_2px_8px_rgba(0,0,0,0.15)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow Background (Liquid Light) -->
+<div class="relative px-margin-mobile pt-space-md space-y-space-lg pb-space-xl">
+<!-- Client Header Card -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg shadow-[0_12px_36px_-6px_rgba(247,202,208,0.4),0_2px_8px_rgba(31,20,24,0.04)]">
+<!-- Ambient Gleam Accent inside card -->
+<div class="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-secondary-container/40 blur-2xl pointer-events-none"></div>
+<div class="relative flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<!-- Profile Avatar with VIP Halo -->
+<div class="relative">
+<div class="w-16 h-16 rounded-full overflow-hidden shadow-[0_4px_16px_rgba(120,85,91,0.25)] ring-2 ring-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of an elegant sophisticated Colombian woman named Sofía Restrepo, styled in warm blush tone studio lighting, sleek polished hair, radiant dewy skin, wearing champagne silk garments, luxury high-fashion atelier photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZqeGAAPUpYHJroOvF-87N6wLnGyrW5SKZoKg20PK7ZGTsHqYHLyjwzKAyFKHRtWx_pd8B2Tc9Ic05bepTswJzZOEc-cp3xXkjPqKhMOrLy3jDvVl_3K0JIXw31BOudcK58rWVxyDG_0ZhA5X6HV7ZQ9KKclIfeySnolD_jmSBhmGL-o83lhMXyqCAPIzi_5akKhKVzMYi292q-x0hiQg6Xj7FMW6y_aRqQo2wCXJZ"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary w-6 h-6 rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Sofía Restrepo</h2>
+</div>
+<span class="inline-flex items-center gap-1 mt-0.5 px-2 py-0.5 rounded-full bg-secondary-container/70 text-on-secondary-container font-label-sm text-label-sm w-fit">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+              VIP Signature
+            </span>
+</div>
+</div>
+<!-- Edit Profile Trigger -->
+<button aria-label="Editar datos personales" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-transform shadow-sm" id="btn-edit-profile">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Quick Info Strip -->
+<div class="mt-space-md pt-space-md grid grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+<span class="font-body-sm text-body-sm truncate">+57 310 458 9201</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">cake</span>
+<span class="font-body-sm text-body-sm">18 de Noviembre</span>
+</div>
+<div class="col-span-2 flex items-center gap-2 text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[16px] text-secondary">alternate_email</span>
+<span class="font-body-sm text-body-sm truncate">sofia.restrepo@luxurymail.com</span>
+</div>
+</div>
+</div>
+<!-- PETALO CLUB: Luxury Membership Card -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-container via-[#2e1d24] to-[#1a1114] text-on-primary p-space-lg shadow-[0_20px_45px_-10px_rgba(36,24,28,0.45),0_6px_16px_rgba(247,202,208,0.25)]">
+<!-- Liquid Golden Shimmer Overlay -->
+<div class="absolute -top-24 -left-20 w-56 h-56 rounded-full bg-tertiary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-16 w-44 h-44 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<!-- Card Top Tier -->
+<div class="relative flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Pétalo Privilege</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-bright mt-0.5 tracking-tight">Signature Club</h3>
+</div>
+<div class="text-right">
+<span class="font-price-display text-price-display text-surface-bright">COP 260.000</span>
+<span class="block font-label-sm text-label-sm text-primary-fixed-dim -mt-1">~$65.00 USD / mes</span>
+</div>
+</div>
+<!-- Monthly Benefits Grid -->
+<div class="relative mt-space-lg grid grid-cols-2 gap-space-sm">
+<!-- Benefit 1 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest/10 backdrop-blur-md p-2.5">
+<div class="flex items-center justify-between text-surface-bright">
+<span class="font-label-sm text-label-sm text-primary-fixed">Manicures Spa</span>
+<span class="font-label-md text-label-md">1 / 2</span>
+</div>
+<div class="w-full bg-surface-container-lowest/20 h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 50%;"></div>
+</div>
+<span class="block font-body-sm text-body-sm text-surface-dim mt-1.5">1 sesión restante</span>
+</div>
+<!-- Benefit 2 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest/10 backdrop-blur-md p-2.5">
+<div class="flex items-center justify-between text-surface-bright">
+<span class="font-label-sm text-label-sm text-primary-fixed">Pedicures Deluxe</span>
+<span class="font-label-md text-label-md">1 disp.</span>
+</div>
+<div class="w-full bg-surface-container-lowest/20 h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 100%;"></div>
+</div>
+<span class="block font-body-sm text-body-sm text-surface-dim mt-1.5">0 de 1 utilizados</span>
+</div>
+<!-- Benefit 3 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest/10 backdrop-blur-md p-2.5">
+<div class="flex items-center gap-1.5 text-primary-fixed">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed">brush</span>
+<span class="font-label-sm text-label-sm">Diseño Catálogo</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-surface-bright mt-1">1 Gratis</p>
+<span class="block font-body-sm text-body-sm text-surface-dim">Arte personalizado</span>
+</div>
+<!-- Benefit 4 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest/10 backdrop-blur-md p-2.5">
+<div class="flex items-center gap-1.5 text-primary-fixed">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed">shopping_bag</span>
+<span class="font-label-sm text-label-sm">Boutique Atelier</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-secondary-container mt-1">15% OFF</p>
+<span class="block font-body-sm text-body-sm text-surface-dim">Activo en compras</span>
+</div>
+</div>
+<!-- Renewal Status & Actions -->
+<div class="relative mt-space-md pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">autorenew</span>
+<span class="font-body-sm text-body-sm">Renueva: 28 Octubre, 2024</span>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all active:scale-95 flex items-center gap-1">
+<span>Gestionar</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Quick Concierge Shortcuts (Liquid Glass iOS List) -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between px-1">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Mi Atelier Personal</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 secciones</span>
+</div>
+<div class="bg-surface-container-lowest/85 backdrop-blur-xl rounded-lg p-1.5 space-y-1 shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)]">
+<!-- Mis Citas -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors active:scale-[0.99]" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Mis Citas</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Próxima: Jueves 24 Oct, 3:30 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">1 Próxima</span>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</a>
+<!-- Diseños Favoritos -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors active:scale-[0.99]" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Diseños Guardados</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Moodboard de inspiración</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary">4 estilos</span>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</a>
+<!-- Mis Pedidos & Compras Boutique -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors active:scale-[0.99]" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Mis Pedidos &amp; Boutique</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Óleo de Cutícula Rosa Francesa</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px]">En camino</span>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</a>
+<!-- Tarjetas de Regalo / Wallet -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors active:scale-[0.99]" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Tarjetas de Regalo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Saldo canjeable en atelier</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-right">
+<div>
+<span class="font-label-md text-label-md text-secondary">COP 100.000</span>
+<span class="block font-label-sm text-[10px] text-outline">~$25.00 USD</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</a>
+<!-- Reseñas & Experiencias -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors active:scale-[0.99]" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Historial de Reseñas</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 servicios valorados (5.0 ★)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Editorial Inspiration Moodboard Strip -->
+<div class="space-y-2">
+<div class="flex items-center justify-between px-1">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Inspiración Guardada</h4>
+<button class="font-label-sm text-label-sm text-on-surface underline">Ver galería</button>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="relative aspect-square rounded-DEFAULT overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Macro luxury nail photography displaying iridescent glazed chrome almond nails resting on pale pink velvet cloth with morning natural sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEuXuxXf3ibDLbzWwob_uXg71_5FuMNm3KOt5H9dhOB6FeCWB6APnKfuGUORvgNKh1-HgozyGqGpAFjjcJD87IuWHmYV8ykYFuq-GFySWqQgHlT12viPbC0hD1S8roCuBBj4Bs5FxfkUw9MU4T9bSEvjX3Q6SVTK7gTQZgFs2pYXVvSRDvHdjDMNFA_-joyamwbLu3QNBPX28dnxUvJE710BiZt30R2dq_anIH8sew"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-md rounded-full w-5 h-5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] text-secondary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-DEFAULT overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up fine jewelry aesthetic nail styling with minimalist micro french tips in deep espresso and rose gold foil accents on short manicured nails." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr8FmWheq2CVVhHenpSFvTGkCACMAuAg_LgJmrDriPLNzsggFg4DDbqfoKbx3rU6Yz1d8sBOb_6QEtGXbsOhJ5zWSvwv3QmP-zwz9CL8xuBi8UmvINvmHWokYTDGpBulEK5A_vRbpywqZrrjvV6HmeJ9Mw2K7DadUUFLBtDrDP5x7mU6dYGDpmDsauJSq09Roy6ZTYIfXY15WrzlX_RgofUBM1WEOjGrT3wH2sThNa"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-md rounded-full w-5 h-5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] text-secondary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-DEFAULT overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Artistic botanical floral fine-line hand-painted details on soft milky porcelain gel nails with luxury aesthetic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLwM9P3Hq-6hhxeOeTQe2rmoneMf1d1xKEiMnF3pRYEua6IFfsUnJnMQVX0CQpZ6Yn8AmvgkHTEabpbRFJgdfigVMiL2JQBLRkELAN3HD2GSlaecrXeexwyEJrQqUbINQji8Erbt3xUzALKQGKTmkY_4T1WJVOzQ4E30ypKv5cdSafoZAXCLANMuzaRF3Hi6GRJAEb2PUEW579ehQsUJi-P9e-zDBtiTCnNjxMgwyx"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-md rounded-full w-5 h-5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] text-secondary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Preferences & Notification Toggles -->
+<div class="space-y-space-sm">
+<div class="px-1">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Ajustes &amp; Experiencia VIP</h4>
+</div>
+<div class="bg-surface-container-lowest/85 backdrop-blur-xl rounded-lg p-space-md space-y-space-md shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)]">
+<!-- Toggle 1: WhatsApp -->
+<div class="flex items-center justify-between gap-space-md">
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface">Recordatorios por WhatsApp</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aviso 24h antes y confirmación de citas</p>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out" data-toggle="notifications-wa" role="switch" type="button">
+<span class="translate-x-6 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container"></div>
+<!-- Toggle 2: Retoque reminders -->
+<div class="flex items-center justify-between gap-space-md">
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface">Avisos de Retoque Periódico</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sugerencia inteligente cada 2-3 semanas</p>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out" data-toggle="notifications-touchup" role="switch" type="button">
+<span class="translate-x-6 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container"></div>
+<!-- Toggle 3: Promotions -->
+<div class="flex items-center justify-between gap-space-md">
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface">Novedades &amp; Acceso Preventa</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lanzamientos de esmaltes y colecciones</p>
+</div>
+<button aria-checked="false" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-surface-container-highest transition-colors duration-200 ease-in-out" data-toggle="notifications-promo" role="switch" type="button">
+<span class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container"></div>
+<!-- Currency Selector Display -->
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface">Moneda de Referencia</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Facturación en pesos con guía USD</p>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-full p-1">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-[11px] shadow-sm">COP ($)</span>
+<span class="px-2.5 py-1 text-on-surface-variant font-label-sm text-[11px]">USD ($)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Atelier Support & Legal Information -->
+<div class="space-y-space-sm">
+<div class="px-1">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Asistencia &amp; Normas</h4>
+</div>
+<div class="bg-surface-container-lowest/85 backdrop-blur-xl rounded-lg p-1.5 space-y-1 shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)]">
+<!-- Direct Concierge Chat -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors" href="https://wa.me/573104589201" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Concierge Pétalo en WhatsApp</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Atención prioritaria y reagendamientos</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">north_east</span>
+</a>
+<!-- Deposit & Cancellation Policy -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Políticas de Depósito y Cancelación</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tolerancia de 15 min • Anticipación 24h</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+<!-- Terms & Privacy -->
+<a class="flex items-center justify-between p-3 rounded-DEFAULT hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Términos del Club &amp; Privacidad</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Garantía de servicio por 7 días</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Log Out / Disconnect Button -->
+<div class="pt-space-sm pb-space-lg flex flex-col items-center">
+<button class="w-full h-14 rounded-full bg-surface-container-low/90 hover:bg-error-container/40 text-on-surface-variant hover:text-error transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-sm" id="btn-logout">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span class="font-label-lg text-label-lg">Cerrar Sesión</span>
+</button>
+<span class="font-label-sm text-[10px] text-outline mt-3 tracking-wider uppercase">Pétalo Nail Studio Atelier • Versión 3.4.2</span>
+</div>
+</div>
+<!-- Toast Notification element -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-opacity duration-300 px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-xl flex items-center gap-2" id="toast-pill">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span>
+<span id="toast-text">Preferencia guardada</span>
+</div>
+</div>
+<script>
+  (function() {
+    // 1. Highlight Profile tab in application bottom navigation
+    const bottomNav = document.querySelector('nav');
+    if (bottomNav) {
+      const links = bottomNav.querySelectorAll('a[data-path]');
+      links.forEach(l => {
+        l.classList.remove('text-secondary', 'font-semibold');
+        l.classList.add('text-on-surface-variant');
+        const iconSpan = l.querySelector('.material-symbols-outlined');
+        if (iconSpan) iconSpan.style.fontVariationSettings = "'FILL' 0";
+      });
+      const perfilTab = bottomNav.querySelector('a[data-path="perfil"]');
+      if (perfilTab) {
+        perfilTab.classList.add('text-secondary', 'font-semibold');
+        perfilTab.classList.remove('text-on-surface-variant');
+        const iconSpan = perfilTab.querySelector('.material-symbols-outlined');
+        if (iconSpan) iconSpan.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+
+    // Toast helper
+    const toast = document.getElementById('toast-pill');
+    const toastText = document.getElementById('toast-text');
+    let toastTimeout = null;
+
+    function showToast(message) {
+      if (!toast || !toastText) return;
+      toastText.textContent = message;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2200);
+    }
+
+    // 2. Interactive Toggle Switches
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isChecked = btn.getAttribute('aria-checked') === 'true';
+        const newState = !isChecked;
+        btn.setAttribute('aria-checked', newState);
+
+        const thumb = btn.querySelector('span');
+        if (newState) {
+          btn.classList.remove('bg-surface-container-highest');
+          btn.classList.add('bg-secondary');
+          thumb.classList.remove('translate-x-0');
+          thumb.classList.add('translate-x-6');
+          showToast('Preferencia activada');
+        } else {
+          btn.classList.remove('bg-secondary');
+          btn.classList.add('bg-surface-container-highest');
+          thumb.classList.remove('translate-x-6');
+          thumb.classList.add('translate-x-0');
+          showToast('Preferencia desactivada');
+        }
+      });
+    });
+
+    // 3. Edit profile action
+    const editBtn = document.getElementById('btn-edit-profile');
+    if (editBtn) {
+      editBtn.addEventListener('click', () => {
+        showToast('Abriendo edición de datos de Sofía...');
+      });
+    }
+
+    // 4. Logout action confirmation
+    const logoutBtn = document.getElementById('btn-logout');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', () => {
+        const confirmLogout = confirm('¿Deseas cerrar la sesión de Sofía Restrepo?');
+        if (confirmLogout) {
+          showToast('Cerrando sesión en Pétalo Studio...');
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_-8px_32px_rgba(247,202,208,0.35)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="disenos" href="#"><span class="material-symbols-outlined text-[22px]">palette</span><span class="font-label-sm text-label-sm">Diseños</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="reservar" href="#"><div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shadow-[0_8px_20px_rgba(247,202,208,0.6)]"><span class="material-symbols-outlined text-on-secondary-container text-[24px]">calendar_month</span></div><span class="font-label-sm text-label-sm text-on-surface mt-1">Reservar</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="tienda" href="#"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="font-label-sm text-label-sm">Tienda</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-transform active:scale-95" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm">Perfil</span></a></div></nav></body></html>
