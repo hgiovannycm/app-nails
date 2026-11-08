@@ -2,7 +2,9 @@
   const SCREENS = [
     { id: 'inicio',       mode: 'cliente', t: 'Inicio',               s: 'Bienvenida y reserva rápida', tip: 'Así ve su salón la clienta: reserva en menos de un minuto, cupo express, probador de colores y tendencias.' },
     { id: 'disenos',      mode: 'cliente', t: 'Catálogo de diseños',  s: 'Filtros y precios claros',    tip: 'La clienta explora diseños por estilo y silueta, ve precio y duración antes de reservar.' },
-    { id: 'reserva',      mode: 'cliente', t: 'Reserva con depósito', s: 'Desglose y pago',             tip: 'Depósito de COP 20.000 que se descuenta del servicio. Quien paga, llega. Toca "Pagar depósito".' },
+    { id: 'servicio',     mode: 'cliente', t: 'Servicio y diseño',    s: 'Paso 1 de la reserva',        tip: 'La clienta elige el servicio y suma un diseño de autor. El total y la duración se actualizan al instante.' },
+    { id: 'horario',      mode: 'cliente', t: 'Especialista y horario', s: 'Paso 2 · horarios libres',  tip: 'Elige la especialista y el día. Solo se ven horarios libres según la duración del servicio; lo ocupado o bloqueado por la dueña no aparece.' },
+    { id: 'reserva',      mode: 'cliente', t: 'Depósito y pago',      s: 'Paso 3 de la reserva',             tip: 'Depósito de COP 20.000 que se descuenta del servicio. Quien paga, llega. Toca "Pagar depósito".' },
     { id: 'confirmacion', mode: 'cliente', t: 'Confirmación',         s: 'WhatsApp automático',         tip: 'La cita queda confirmada y llega un mensaje por WhatsApp. Toca "Ver cómo le llega a la dueña".' },
     { id: 'citas',        mode: 'cliente', t: 'Mis citas',            s: 'Reprogramar y repetir',       tip: 'La clienta reprograma, cancela o repite su cita sin llamar al salón.' },
     { id: 'tienda',       mode: 'cliente', t: 'Tienda y regalos',     s: 'Productos y gift cards',      tip: 'Ingresos extra las 24 horas: productos para llevar a casa y tarjetas de regalo.' },
@@ -16,7 +18,7 @@
   const $ = (s) => document.querySelector(s);
   const frame = $('#frame'), device = $('#device'), list = $('#list');
   let mode = 'cliente', cur = null, hist = [];
-  let state = { prices: {}, arrived: {}, blocked: {}, booking: null };
+  let state = { prices: {}, arrived: {}, blocked: {}, booking: null, sel: null };
   try { Object.assign(state, JSON.parse(sessionStorage.getItem('petalo-demo') || '{}')); } catch (e) {}
   const pushState = () => { try { frame.contentWindow.postMessage({ demoState: state }, '*'); } catch (e) {} };
   const saveState = () => { try { sessionStorage.setItem('petalo-demo', JSON.stringify(state)); } catch (e) {} };
@@ -29,7 +31,7 @@
     $('#mDuena').classList.toggle('on', mode === 'duena');
     const s = SCREENS.find((x) => x.id === cur);
     $('#tip').innerHTML = s ? `<b>Qué mostrar</b>${s.tip}` : '';
-    $('#reset').style.display = state.booking || Object.keys(state.prices).length ? '' : 'none';
+    $('#reset').style.display = state.booking || state.sel || Object.keys(state.prices).length || Object.keys(state.blocked).length ? '' : 'none';
   }
   function fit() {
     const st = $('#stage').getBoundingClientRect();
@@ -60,7 +62,7 @@
   });
   $('#mCliente').onclick = () => setMode('cliente');
   $('#mDuena').onclick = () => setMode('duena');
-  $('#reset').onclick = () => { state = { prices: {}, arrived: {}, blocked: {}, booking: null }; saveState(); hist = []; go('inicio', false); };
+  $('#reset').onclick = () => { state = { prices: {}, arrived: {}, blocked: {}, booking: null, sel: null }; saveState(); hist = []; go('inicio', false); };
   addEventListener('resize', fit);
   new ResizeObserver(fit).observe($('#stage'));
   addEventListener('hashchange', () => { const id = location.hash.slice(1); if (id && id !== cur) go(id); });

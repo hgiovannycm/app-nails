@@ -74,9 +74,16 @@
   const st=()=>(window.DEMO&&window.DEMO.state)||{};
   const staffOf=(id)=>STAFF.find(x=>x.id===id);
 
+  const DAYL=(d)=>d===0?'Hoy':(DEMO.data.DAY_FULL[d]+' '+DEMO.data.DAY_NUM[d]);
+  function bookingInfo(){
+    const b=st().booking; if(!b) return null;
+    const t=(b.time||'11:30').split(':');
+    return {name:b.name,svc:b.service,h:+t[0],m:+t[1],min:b.min||60,staff:b.staff,total:b.total,day:b.day||0};
+  }
   function items(){
-    const s=st(), list=SEED.map(x=>({...x}));
-    if(s.booking){const b=s.booking; const t=(b.time||'11:30').split(':'); list.push({id:'new',h:+t[0],m:+t[1],name:b.name,svc:b.service,staff:b.staff,total:b.total,paid:true,isNew:true});}
+    const list=((window.DEMO&&DEMO.data)?DEMO.data.SEED:SEED).map(x=>({...x}));
+    const b=bookingInfo();
+    if(b&&b.day===0) list.push({id:'new',h:b.h,m:b.m,min:b.min,name:b.name,svc:b.svc,staff:b.staff,total:b.total,paid:true,isNew:true});
     list.sort((a,b)=>a.h*60+a.m-(b.h*60+b.m));
     return list;
   }
@@ -85,17 +92,18 @@
     const arrN=all.filter(x=>arrived[x.id]).length;
     const income=all.reduce((a,x)=>a+x.total,0), deps=all.filter(x=>x.paid).length*20000;
     // reserva nueva
-    const nb=all.find(x=>x.isNew);
+    const nb=bookingInfo();
     $('#newBooking').innerHTML=nb?`
       <div class="rounded-lg p-4 bg-secondary-container/70 shadow-[0_14px_34px_-6px_rgba(224,159,175,0.45)] border border-white/80">
         <div class="flex items-center gap-2 mb-2"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-secondary-container">Nueva reserva desde la app</span></div>
         <div class="flex items-start justify-between gap-3">
           <div><div class="font-headline-sm text-headline-sm text-on-surface">${nb.name}</div>
           <div class="font-body-sm text-body-sm text-on-surface-variant">${nb.svc}</div>
-          <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Hoy · ${fmt(nb.h,nb.m)} · con ${staffOf(nb.staff).s}</div></div>
+          <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">${DAYL(nb.day)} · ${fmt(nb.h,nb.m)} · con ${staffOf(nb.staff).n}</div></div>
           <span class="font-price-display text-[20px] text-on-surface whitespace-nowrap">${cop(nb.total)}</span>
         </div>
         <div class="mt-3 flex items-center gap-2 font-label-sm text-label-sm text-on-secondary-container"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span>Depósito de COP 20.000 pagado · confirmación enviada por WhatsApp</div>
+        ${nb.day!==0?'<div class="mt-2 font-body-sm text-[12px] text-on-secondary-container">Queda agendada para ese día y el horario ya no se ofrece a otras clientas.</div>':''}
       </div>`:'';
     $('#metrics').innerHTML=[
       ['event_available','Citas hoy',all.length,arrN+' ya llegaron'],
