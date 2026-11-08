@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pétalo Nail Studio · Reserva tus uñas</title>
+<meta name="description" content="Demo interactiva de app para salones de uñas: catálogo de diseños, reservas con depósito, panel de la dueña, tienda y membresías.">
+<meta name="theme-color" content="#fff3f7">
+<link rel="stylesheet" href="css/styles.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/" } }
+</script>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<div class="demo-bar">Demo interactiva · Salón ficticio · Precios, fotos y pagos son de ejemplo</div>
+
+<header class="nav-wrap">
+  <nav class="nav glass" aria-label="Principal">
+    <a class="brand" href="#inicio"><span class="brand-dot"></span>Pétalo <em>Nail Studio</em></a>
+    <div class="nav-links">
+      <a href="#disenos">Diseños</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#club">Membresías</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-ghost sm" id="openAdmin">Panel de la dueña</button>
+      <button class="btn btn-ghost sm cart-btn" id="openCart" aria-label="Carrito">Bolsa <b id="cartCount">0</b></button>
+      <button class="btn btn-primary sm" data-book>Reservar</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-copy">
+      <span class="eyebrow">Nail studio · Desde 2019</span>
+      <h1>Tus uñas, listas<br><em>para brillar.</em></h1>
+      <p class="lead">Elige tu diseño, reserva en menos de un minuto y deja un depósito de COP 20.000 (USD 5) que se descuenta del servicio. Sin llamadas, sin esperas.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" data-book>Reservar ahora</button>
+        <a class="btn btn-glass" href="#disenos">Ver diseños</a>
+      </div>
+      <div class="hero-chips">
+        <div class="chip-card glass"><small>Próximo turno</small><b id="nextSlot">Hoy, 4:00 pm con Valeria</b></div>
+        <div class="chip-card glass"><small>Reseñas</small><b>4.9 ★★★★★ · 318</b></div>
+      </div>
+    </div>
+    <div class="hero-3d">
+      <div class="stage-glow"></div>
+      <canvas id="hand3d" aria-label="Mano 3D con uñas de colores que cambian"></canvas>
+      <div class="swatches glass" id="swatches" role="group" aria-label="Prueba un color"></div>
+      <span class="hint">Modelo 3D · mueve el cursor y prueba un color</span>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="marquee"></div></div>
+
+  <!-- DISEÑOS -->
+  <section class="section" id="disenos">
+    <div class="section-head">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Elige tu diseño.<br><em>Nosotras lo hacemos real.</em></h2>
+      <p class="sub">Filtra por estilo y forma. Cada diseño muestra precio y duración antes de reservar.</p>
+    </div>
+    <div class="filters">
+      <div class="filter-row glass" id="fStyle"></div>
+      <div class="filter-row glass" id="fShape"></div>
+    </div>
+    <div class="grid designs" id="designGrid"></div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="section-head">
+      <span class="eyebrow">Servicios</span>
+      <h2>Todo en un solo lugar,<br><em>con tiempos claros.</em></h2>
+    </div>
+    <div class="grid services" id="serviceGrid"></div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="section" id="equipo">
+    <div class="section-head">
+      <span class="eyebrow">Equipo</span>
+      <h2>Manos expertas,<br><em>agenda propia.</em></h2>
+      <p class="sub">La clienta elige con quién quiere su cita y ve solo los horarios libres.</p>
+    </div>
+    <div class="grid team" id="teamGrid"></div>
+  </section>
+
+  <!-- TIENDA -->
+  <section class="section" id="tienda">
+    <div class="section-head">
+      <span class="eyebrow">Tienda y regalos</span>
+      <h2>Productos y<br><em>tarjetas de regalo.</em></h2>
+      <p class="sub">Ingresos extra las 24 horas, sin atender el mostrador.</p>
+    </div>
+    <div class="shop-layout">
+      <div class="grid products" id="productGrid"></div>
+      <aside class="gift glass" id="giftCard"></aside>
+    </div>
+  </section>
+
+  <!-- CLUB -->
+  <section class="section" id="club">
+    <div class="section-head">
+      <span class="eyebrow">Pétalo Club</span>
+      <h2>Ingresos fijos,<br><em>clientas fieles.</em></h2>
+      <p class="sub">Planes mensuales que se cobran solos y hacen que vuelvan cada mes.</p>
+    </div>
+    <div class="grid plans" id="planGrid"></div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="section" id="resenas">
+    <div class="section-head">
+      <span class="eyebrow">Reseñas</span>
+      <h2>Lo que dicen<br><em>nuestras clientas.</em></h2>
+    </div>
+    <div class="grid reviews" id="reviewGrid"></div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="cta glass">
+      <h2>Tu próxima cita<br><em>está a un toque.</em></h2>
+      <button class="btn btn-primary" data-book>Reservar ahora</button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><b>Pétalo Nail Studio</b> · Calle 85 #15-22, Bogotá · Lun a Dom, 9 am – 7 pm · WhatsApp +57 300 000 0000</div>
+  <small>Demo con salón ficticio: nombre, precios, reseñas e imágenes son de ejemplo. Pagos y mensajes están simulados.</small>
+</footer>
+
+<!-- Drawer (reserva / bolsa) -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer glass" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <div class="traffic"><i></i><i></i><i></i></div>
+    <b id="drawerTitle">Reserva</b>
+    <button class="icon-btn" id="drawerClose" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+
+<!-- Panel de la dueña -->
+<div class="admin" id="admin" aria-hidden="true">
+  <div class="admin-window glass">
+    <div class="drawer-head">
+      <div class="traffic"><i></i><i></i><i></i></div>
+      <b>Panel de la dueña</b>
+      <button class="icon-btn" id="adminClose" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="admin-body" id="adminBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="caption" id="caption"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
