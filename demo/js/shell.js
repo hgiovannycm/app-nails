@@ -15,6 +15,8 @@
     { id: 'reportes',     mode: 'duena',   t: 'Finanzas',             s: 'Ingresos y ausencias',        tip: 'Cambia entre Hoy, Semana y Mes. Ve ingresos, servicios más rentables y ausencias contra depósitos cobrados.' },
     { id: 'whatsapp',     mode: 'duena',   t: 'Ajustes y WhatsApp',   s: 'Depósito y mensajes',         tip: 'Define el depósito, la política de cancelación y los mensajes automáticos de WhatsApp.' },
   ];
+  const VIDEO = /[?&]video/.test(location.search);
+  if (VIDEO) document.body.classList.add('video');
   const $ = (s) => document.querySelector(s);
   const frame = $('#frame'), device = $('#device'), list = $('#list');
   let mode = 'cliente', cur = null, hist = [];
@@ -36,7 +38,7 @@
   function fit() {
     const st = $('#stage').getBoundingClientRect();
     const w = 390 + 22, h = 844 + 22;
-    const k = Math.min(1, (st.width - 24) / w, (st.height - 24) / h);
+    const k = Math.min(VIDEO ? 1.25 : 1, (st.width - 24) / w, (st.height - (VIDEO ? 8 : 24)) / h);
     device.style.transform = `scale(${k})`;
     device.style.margin = `${-(h * (1 - k)) / 2}px ${-(w * (1 - k)) / 2}px`;
   }
@@ -66,6 +68,21 @@
   addEventListener('resize', fit);
   new ResizeObserver(fit).observe($('#stage'));
   addEventListener('hashchange', () => { const id = location.hash.slice(1); if (id && id !== cur) go(id); });
+
+  // Ganchos para la grabación del video
+  window.__cap = (eyebrow, title, sub, step, total) => {
+    const b = document.querySelector('.vbody'); b.classList.add('out');
+    setTimeout(() => {
+      $('#vEyebrow').textContent = eyebrow || ''; $('#vTitle').textContent = title || ''; $('#vSub').textContent = sub || '';
+      $('#vSteps').innerHTML = total ? Array.from({ length: total }, (_, i) => `<i class="${i < step ? 'on' : ''}"></i>`).join('') : '';
+      b.classList.remove('out');
+    }, 380);
+  };
+  window.__card = (eyebrow, title, sub) => {
+    const c = $('#vcard');
+    if (!title) { c.classList.remove('on'); return; }
+    $('#cEyebrow').textContent = eyebrow || ''; $('#cTitle').textContent = title; $('#cSub').textContent = sub || ''; c.classList.add('on');
+  };
 
   go(SCREENS.some((s) => s.id === location.hash.slice(1)) ? location.hash.slice(1) : 'inicio', false);
 })();

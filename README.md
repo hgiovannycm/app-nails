@@ -31,4 +31,4 @@ Abre http://localhost:8000. Three.js está incluido en `vendor/`.
 - `css/styles.css` · tema claro y componentes de cristal líquido
 - `js/app.js` · datos de ejemplo, catálogo, reserva, panel, tienda
 - `js/hand.js` · escena 3D (Three.js)
-- `video/` · video de la demo
+- `video/petalo-nail-studio-demo.mp4` · video de la demo (2:16, 1920x1080). Se graba con la demo abierta en modo video: `demo/index.html?video`

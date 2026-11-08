@@ -45,3 +45,26 @@ body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);backg
   .device:not(.web) .notch{display:none}
   .device:not(.web) iframe{border-radius:0}
 }
+
+/* ===== Modo video (?video) ===== */
+.vcap,.vcard{display:none}
+body.video .rail{display:none}
+body.video .app{grid-template-columns:1fr 1fr}
+body.video .stage{padding:0}
+body.video .vcap{display:flex;flex-direction:column;justify-content:space-between;padding:64px 70px 56px 30px}
+.vbrand span{font-family:"Playfair Display",serif;font-size:30px;font-weight:600;display:block;line-height:1}
+.vbrand small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.vbody{max-width:640px}
+.veyebrow{font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#a0707a;font-weight:700;margin-bottom:18px;transition:opacity .4s}
+.vbody h2{font-family:"Playfair Display",serif;font-weight:600;font-size:60px;line-height:1.08;letter-spacing:-.02em;transition:opacity .4s,transform .4s}
+.vbody p{margin-top:22px;font-size:23px;line-height:1.5;color:var(--muted);max-width:560px;transition:opacity .4s}
+.vbody.out h2,.vbody.out p,.vbody.out .veyebrow{opacity:0;transform:translateY(8px)}
+.vsteps{display:flex;gap:10px}
+.vsteps i{height:6px;border-radius:3px;background:rgba(160,112,122,.25);flex:1;max-width:60px;transition:.4s}
+.vsteps i.on{background:#d9568b}
+body.video .vcard{display:grid;place-items:center;position:fixed;inset:0;z-index:50;background:radial-gradient(60vw 60vw at 15% 10%,#ffd9e2,transparent 60%),radial-gradient(50vw 50vw at 90% 25%,#f3e3ff,transparent 60%),radial-gradient(60vw 60vw at 50% 110%,#ffe6d5,transparent 60%),#faf6f5;opacity:0;pointer-events:none;transition:opacity .8s}
+body.video .vcard.on{opacity:1}
+.vcard-in{text-align:center;max-width:1100px;padding:0 40px}
+.vcard-in small{display:block;font-size:16px;letter-spacing:.3em;text-transform:uppercase;color:#a0707a;font-weight:700;margin-bottom:26px}
+.vcard-in h1{font-family:"Playfair Display",serif;font-weight:600;font-size:96px;line-height:1.05;letter-spacing:-.025em}
+.vcard-in p{margin-top:30px;font-size:28px;color:var(--muted);line-height:1.45}
