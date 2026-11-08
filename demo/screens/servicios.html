@@ -1,613 +1,481 @@
 <!DOCTYPE html>
 
-<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#fcf8f7","tertiary":"#735c00","surface-container-low":"#f7f3f2","on-secondary-fixed":"#2d1419","inverse-on-surface":"#f4f0ef","on-secondary":"#ffffff","on-surface-variant":"#4d4547","secondary-fixed":"#ffd9de","on-secondary-fixed-variant":"#5e3e43","primary-container":"#24181c","on-secondary-container":"#7a585d","surface-container-highest":"#e5e2e1","primary-fixed-dim":"#d6c1c7","secondary-container":"#ffd2d8","on-primary-fixed-variant":"#514348","on-primary-container":"#917f84","on-tertiary":"#ffffff","background":"#fcf8f7","tertiary-container":"#cca730","secondary":"#78555b","on-tertiary-fixed":"#241a00","surface-variant":"#e5e2e1","surface-container":"#f1edec","tertiary-fixed-dim":"#e9c349","surface-container-lowest":"#ffffff","on-error-container":"#93000a","surface-bright":"#fcf8f7","surface-tint":"#6a5a5f","outline-variant":"#d0c3c6","primary":"#000000","error":"#ba1a1a","inverse-primary":"#d6c1c7","error-container":"#ffdad6","surface-container-high":"#ebe7e6","on-tertiary-fixed-variant":"#574500","on-background":"#1c1b1b","primary-fixed":"#f3dde3","on-surface":"#1c1b1b","on-primary-fixed":"#24181c","surface-dim":"#ddd9d8","outline":"#7f7477","tertiary-fixed":"#ffe088","secondary-fixed-dim":"#e7bcc1","inverse-surface":"#313030","on-tertiary-container":"#4f3d00","on-primary":"#ffffff","on-error":"#ffffff"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-xl":"2rem","margin":"1.25rem","gutter":"0.75rem","space-sm":"0.5rem","gutter-mobile":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin-mobile":"1rem"},fontFamily:{"headline-xl-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"price-display":["Playfair Display"],"headline-sm":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"headline-xl":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},fontSize:{"headline-xl-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"600"}],"price-display":["24px",{lineHeight:"28px",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}};</script><meta name="demo-screen" content="servicios"/><script src="../js/wire.js" defer></script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="px-6 pt-6 pb-5 flex flex-col gap-2"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px] text-secondary-fixed">spa</span></div><div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface block leading-none">Pétalo</span><span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-medium block mt-1">Atelier Chic Bogotá</span></div></div><div class="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_2px_8px_rgba(247,202,208,0.25)]"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Abierto · 3 especialistas en turno</span></div></div><div class="flex-1 overflow-y-auto px-4 py-2 space-y-6"><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Operaciones</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="agenda-de-hoy" href="#"><span class="material-symbols-outlined text-[20px]">today</span>Agenda de Hoy</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="calendario-y-horarios" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Calendario &amp; Horarios</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="citas-y-reservas" href="#"><span class="material-symbols-outlined text-[20px]">book_online</span>Citas &amp; Reservas</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Catálogo &amp; Equipo</span></div><a aria-current="page" class="flex items-center px-3 py-2 transition-all gap-3 bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]" data-path="servicios-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">dry_cleaning</span>Servicios y Precios</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="catalogo-de-disenos" href="#"><span class="material-symbols-outlined text-[20px]">palette</span>Catálogo de Diseños</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="especialistas-y-equipo" href="#"><span class="material-symbols-outlined text-[20px]">group</span>Especialistas &amp; Equipo</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Clientas &amp; Ventas</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="clientas-y-membresias" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span>Clientas &amp; Membresías</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="tienda-y-pedidos" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span>Tienda &amp; Pedidos</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="tarjetas-de-regalo" href="#"><span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>Tarjetas de Regalo</a></nav><nav class="space-y-1" data-active-classes="bg-secondary-container text-on-secondary-fixed font-bold rounded-DEFAULT shadow-[0_8px_18px_rgba(247,202,208,0.4)]"><div class="px-3 pb-1 pt-2"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Gestión</span></div><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="reportes-financieros" href="#"><span class="material-symbols-outlined text-[20px]">insights</span>Reportes Financieros</a><a class="flex items-center px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-3 font-body-md text-body-md" data-path="configuracion-del-atelier" href="#"><span class="material-symbols-outlined text-[20px]">tune</span>Configuración del Atelier</a></nav></div><div class="p-4 bg-surface-container/60 backdrop-blur-md"><div class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-lowest/90 shadow-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">visibility</span><span class="font-label-sm text-label-sm text-on-surface font-medium">Vista Atelier</span></div><button class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">Cambiar a Clienta</button></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-2xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-8 flex items-center justify-between"><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-tertiary text-[18px]">location_on</span><span class="font-label-md text-label-md font-medium">Atelier Calle 85, Bogotá</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><div class="flex items-center gap-5"><button class="relative p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-3 pl-3"><div class="text-right"><span class="font-label-md text-label-md text-on-surface font-semibold block leading-tight">Valentina Osorio</span><span class="font-label-sm text-label-sm text-secondary block">Atelier Owner</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative pt-16 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
-<!-- Toast Notification Bar: Realtime Socket Sync -->
-<aside aria-label="Notificación de sincronización" class="mb-6 flex items-center justify-between px-5 py-3 rounded-DEFAULT bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)]">
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "outline-variant": "#d0c3c6", "surface-bright": "#fcf8f7", "error": "#ba1a1a", "surface-container-low": "#f7f3f2", "on-background": "#1c1b1b", "on-primary": "#ffffff", "tertiary-fixed": "#ffe088", "background": "#fcf8f7", "surface-container-highest": "#e5e2e1", "surface-variant": "#e5e2e1", "on-tertiary-fixed-variant": "#574500", "on-tertiary-fixed": "#241a00", "on-secondary-fixed-variant": "#5e3e43", "inverse-on-surface": "#f4f0ef", "error-container": "#ffdad6", "secondary-fixed-dim": "#e7bcc1", "primary-fixed": "#f3dde3", "primary": "#000000", "on-secondary-container": "#7a585d", "surface": "#fcf8f7", "on-primary-fixed": "#24181c", "outline": "#7f7477", "secondary-container": "#ffd2d8", "on-secondary": "#ffffff", "inverse-surface": "#313030", "tertiary-container": "#cca730", "surface-dim": "#ddd9d8", "primary-fixed-dim": "#d6c1c7", "on-secondary-fixed": "#2d1419", "on-surface": "#1c1b1b", "on-surface-variant": "#4d4547", "surface-container-lowest": "#ffffff", "primary-container": "#24181c", "surface-tint": "#6a5a5f", "on-primary-fixed-variant": "#514348", "inverse-primary": "#d6c1c7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface-container": "#f1edec", "tertiary": "#735c00", "on-tertiary-container": "#4f3d00", "tertiary-fixed-dim": "#e9c349", "secondary": "#78555b", "on-primary-container": "#917f84", "surface-container-high": "#ebe7e6", "secondary-fixed": "#ffd9de" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter": "0.75rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "margin": "1.25rem", "space-lg": "1.5rem", "gutter-mobile": "0.5rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "price-display": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "price-display": ["24px", { "lineHeight": "28px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fcf8f7;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <meta name="demo-screen" content="servicios"/><meta name="demo-mode" content="duena"/><script src="../js/wire.js" defer></script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(31,20,24,0.04)]"><div class="h-20 px-margin flex items-center justify-between"><div class="flex flex-col gap-0.5"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Pétalo</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container tracking-wider uppercase">Admin</span></div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">location_on</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[140px]">Calle 85 (Bogotá)</span></div></div><div class="flex items-center gap-space-sm"><div class="text-right hidden xs:flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Valentina Osorio</span><span class="font-body-sm text-[10px] text-outline leading-tight">Dueña Atelier</span></div><button aria-label="Notificaciones" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface bg-surface-container-low transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="relative flex items-center justify-center p-0.5 rounded-full bg-surface-container-highest"><span style="width:32px;height:32px;border-radius:9999px;display:grid;place-items:center;background:#f7cad0;color:#1f1418;font:700 12px 'Plus Jakarta Sans',sans-serif">VO</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-8 space-y-5">
+<!-- Toast Status Synchronized -->
+<div class="w-full bg-secondary-container/70 backdrop-blur-xl rounded-DEFAULT p-3.5 flex items-center justify-between shadow-sm transition-all duration-300" id="sync-banner">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-on-secondary-container flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container font-medium">
+        ¡Cambios sincronizados! Actualizado en vivo en la app.
+      </p>
+</div>
+<button class="text-on-secondary-container/70 hover:text-on-secondary-container flex items-center" onclick="document.getElementById('sync-banner').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Header & Segmented Pill Switcher -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-baseline justify-between">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Servicios &amp; Diseños</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">5 activos · Calle 85 (Bogotá) · TRM $4.000</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-semibold">
+        Nov 2026
+      </span>
+</div>
+<!-- Segmented Control Glass Capsule -->
+<div class="grid grid-cols-2 p-1 bg-surface-container-low rounded-full shadow-inner">
+<button class="py-2.5 rounded-full font-label-md text-label-md font-semibold text-on-primary bg-primary shadow-sm flex items-center justify-center gap-1.5 transition-all" id="tab-btn-servicios" onclick="switchCatalogTab('servicios')">
+<span class="material-symbols-outlined text-[17px]">spa</span>
+<span>Servicios (5)</span>
+</button>
+<button class="py-2.5 rounded-full font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5 transition-all" id="tab-btn-disenos" onclick="switchCatalogTab('disenos')">
+<span class="material-symbols-outlined text-[17px]">palette</span>
+<span>Diseños (18)</span>
+</button>
+</div>
+</div>
+<!-- SECCIÓN 1: SERVICIOS LIST -->
+<div class="space-y-3" id="section-servicios">
+<!-- Service 1: Manicure Semipermanente -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-2xl rounded-DEFAULT p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
 <div class="flex items-center gap-3">
-<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
-<span class="material-symbols-outlined text-[16px]">sync_saved_locally</span>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">brush</span>
 </div>
-<div class="flex items-center gap-2">
-<span class="font-label-md text-label-md text-on-surface font-semibold">¡Cambios sincronizados!</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Actualizado en la app de tus clientas en tiempo real (vía WebSocket seguro).</span>
-</div>
-</div>
-<div class="flex items-center gap-2">
-<span class="inline-block w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
-<span class="font-label-sm text-label-sm text-secondary font-medium">Hace 12 segundos · Bogotá GMT-5</span>
-</div>
-</aside>
-<!-- Top Action & Title Header -->
-<header class="mb-8 flex flex-col xl:flex-row xl:items-end justify-between gap-6">
 <div>
-<nav aria-label="Ruta de navegación" class="flex items-center gap-2 mb-2">
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Catálogo &amp; Equipo</span>
-<span class="material-symbols-outlined text-outline text-[14px]">chevron_right</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Servicios y Precios</span>
-</nav>
-<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Catálogo de Servicios &amp; Diseños de Autor</h1>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">Configuración de carta, tarifas dinámicas COP/USD y book de nail art para la sede Calle 85.</p>
-</div>
-<!-- Quick Navigation Toggles & CTAs -->
-<div class="flex flex-wrap items-center gap-3">
-<!-- Segmented Tab Switcher -->
-<div class="flex items-center p-1 rounded-full bg-surface-container shadow-inner">
-<button class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" type="button">
-<span class="material-symbols-outlined text-[16px]">check_circle</span>
-          Servicios de Atelier
-        </button>
-<button class="px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
-<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
-          Arte &amp; Lookbook
-        </button>
-</div>
-<!-- Action Buttons -->
-<div class="flex items-center gap-2">
-<button class="px-4 py-2.5 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all flex items-center gap-2" type="button">
-<span class="material-symbols-outlined text-secondary text-[18px]">add_photo_alternate</span>
-          + Nuevo Diseño
-        </button>
-<button class="px-5 py-2.5 rounded-full bg-primary-container text-on-primary hover:bg-on-background font-label-md text-label-md shadow-[0_8px_18px_rgba(31,20,24,0.18)] transition-all flex items-center gap-2" type="button">
-<span class="material-symbols-outlined text-secondary-fixed text-[18px]">add</span>
-          + Nuevo Servicio
-        </button>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Manicure Semipermanente</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">60 min</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Alta demanda</span>
 </div>
 </div>
-</header>
-<!-- Filter Category Badges -->
-<div class="mb-8 flex items-center gap-2 overflow-x-auto pb-1">
-<button class="px-4 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-sm" type="button">Todos (5)</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Manicure</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Pedicure</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Combos</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Cuidados</button>
 </div>
-<!-- Main 2-Column Split Dashboard (65% / 35%) -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- LEFT COLUMN: 65% width (lg:col-span-8) -->
-<div class="lg:col-span-8 flex flex-col gap-10">
-<!-- Section: Listado de Servicios Interactivos -->
-<section class="flex flex-col gap-4">
-<div class="flex items-center justify-between px-1">
-<div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface">Servicios Principales en Menú</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Modifica precios en COP y duraciones con cálculo automático en dólares (TRM $4,000).</p>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">5 ítems activos</span>
-</div>
-<!-- Services Table-Style Cards List -->
-<div class="flex flex-col gap-3">
-<!-- Item 1: Selected & Highlighted -->
-<article class="p-4 rounded-DEFAULT bg-secondary-container/40 backdrop-blur-xl shadow-[0_14px_34px_-6px_rgba(224,159,175,0.38)] flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all">
-<div class="flex items-center gap-3.5 min-w-0">
-<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm shrink-0">
-<span class="material-symbols-outlined text-[20px]">spa</span>
-</div>
-<div class="min-w-0">
-<div class="flex items-center gap-2">
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Manicure Semipermanente</h3>
-<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Editando</span>
-</div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Categoría: Manicure · Duración estándar 60 min</span>
-</div>
-</div>
-<div class="flex items-center gap-4 shrink-0">
-<div class="flex items-center gap-2 bg-surface-container-lowest/80 px-3 py-1.5 rounded-full shadow-sm">
-<span class="font-label-sm text-label-sm text-outline">COP</span>
-<input class="w-20 bg-transparent text-right font-price-display text-price-display text-on-surface focus:outline-none" id="servicePriceInput" type="text" value="60.000"/>
-<span class="font-label-sm text-label-sm text-secondary font-medium">(~$15.00 USD)</span>
-</div>
-<div class="flex items-center gap-1.5 bg-surface-container-lowest/80 px-3 py-1.5 rounded-full shadow-sm">
-<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
-<span class="font-label-md text-label-md text-on-surface font-semibold">60</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">min</span>
-</div>
-<!-- Switch Activo -->
+<!-- Switch Toggle -->
 <label class="relative inline-flex items-center cursor-pointer">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
 </label>
 </div>
-</article>
-<!-- Item 2: Acrílicas / Gel Sculpt -->
-<article class="p-4 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)] flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all">
-<div class="flex items-center gap-3.5 min-w-0">
-<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-display text-price-display text-on-surface">COP 60.000</span>
+<span class="font-body-sm text-body-sm text-outline">~$15.00 USD</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-secondary-container transition-colors" onclick="openEditDrawer('Manicure Semipermanente', 60000, 60)">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+          Editar
+        </button>
+</div>
+</div>
+<!-- Service 2: Acrílicas / Gel Sculpt -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-2xl rounded-DEFAULT p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
 <span class="material-symbols-outlined text-[20px]">diamond</span>
 </div>
-<div class="min-w-0">
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Acrílicas / Gel Sculpt</h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Categoría: Estructura · 3 técnicas certificadas</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Acrílicas / Gel Sculpt</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">120 min</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Técnica Rusa</span>
 </div>
 </div>
-<div class="flex items-center gap-4 shrink-0">
-<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="font-label-sm text-label-sm text-outline">COP</span>
-<span class="font-price-display text-price-display text-on-surface">130.000</span>
-<span class="font-label-sm text-label-sm text-secondary font-medium">(~$32.50 USD)</span>
-</div>
-<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
-<span class="font-label-md text-label-md text-on-surface font-semibold">120</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">min</span>
 </div>
 <label class="relative inline-flex items-center cursor-pointer">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
 </label>
 </div>
-</article>
-<!-- Item 3: Pedicure Spa -->
-<article class="p-4 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)] flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all">
-<div class="flex items-center gap-3.5 min-w-0">
-<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-display text-price-display text-on-surface">COP 130.000</span>
+<span class="font-body-sm text-body-sm text-outline">~$32.50 USD</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-secondary-container transition-colors" onclick="openEditDrawer('Acrílicas / Gel Sculpt', 130000, 120)">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+          Editar
+        </button>
+</div>
+</div>
+<!-- Service 3: Pedicure Spa -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-2xl rounded-DEFAULT p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
 <span class="material-symbols-outlined text-[20px]">water_drop</span>
 </div>
-<div class="min-w-0">
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Pedicure Spa</h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Categoría: Pedicure · Exfoliación y sales de lavanda</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pedicure Spa Delux</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">75 min</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sales &amp; Masaje</span>
 </div>
 </div>
-<div class="flex items-center gap-4 shrink-0">
-<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="font-label-sm text-label-sm text-outline">COP</span>
-<span class="font-price-display text-price-display text-on-surface">75.000</span>
-<span class="font-label-sm text-label-sm text-secondary font-medium">(~$18.75 USD)</span>
-</div>
-<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
-<span class="font-label-md text-label-md text-on-surface font-semibold">75</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">min</span>
 </div>
 <label class="relative inline-flex items-center cursor-pointer">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
 </label>
 </div>
-</article>
-<!-- Item 4: Manicure + Pedicure Signature -->
-<article class="p-4 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)] flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all">
-<div class="flex items-center gap-3.5 min-w-0">
-<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
-<span class="material-symbols-outlined text-[20px]">stars</span>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-display text-price-display text-on-surface">COP 75.000</span>
+<span class="font-body-sm text-body-sm text-outline">~$18.75 USD</span>
 </div>
-<div class="min-w-0">
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Manicure + Pedicure Signature</h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Categoría: Combo Dúo · Servicio simultáneo 2 técnicas</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-secondary-container transition-colors" onclick="openEditDrawer('Pedicure Spa Delux', 75000, 75)">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+          Editar
+        </button>
 </div>
 </div>
-<div class="flex items-center gap-4 shrink-0">
-<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="font-label-sm text-label-sm text-outline">COP</span>
-<span class="font-price-display text-price-display text-on-surface">120.000</span>
-<span class="font-label-sm text-label-sm text-secondary font-medium">(~$30.00 USD)</span>
+<!-- Service 4: Dúo Mani + Pedi -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-2xl rounded-DEFAULT p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
 </div>
-<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
-<span class="font-label-md text-label-md text-on-surface font-semibold">120</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">min</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ritual Manicure + Pedicure</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">120 min</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Favorito</span>
+</div>
+</div>
 </div>
 <label class="relative inline-flex items-center cursor-pointer">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
 </label>
 </div>
-</article>
-<!-- Item 5: Retiro y Cuidado Nutritivo -->
-<article class="p-4 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.25)] flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all">
-<div class="flex items-center gap-3.5 min-w-0">
-<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-display text-price-display text-on-surface">COP 120.000</span>
+<span class="font-body-sm text-body-sm text-outline">~$30.00 USD</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-secondary-container transition-colors" onclick="openEditDrawer('Ritual Manicure + Pedicure', 120000, 120)">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+          Editar
+        </button>
+</div>
+</div>
+<!-- Service 5: Retiro y Cuidado -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-2xl rounded-DEFAULT p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
 <span class="material-symbols-outlined text-[20px]">healing</span>
 </div>
-<div class="min-w-0">
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Retiro y Cuidado Nutritivo</h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Categoría: Mantenimiento · Tratamiento con queratina y aceite de jojoba</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Retiro Cuidadoso &amp; Keratina</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">20 min</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sin torno invasivo</span>
 </div>
 </div>
-<div class="flex items-center gap-4 shrink-0">
-<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="font-label-sm text-label-sm text-outline">COP</span>
-<span class="font-price-display text-price-display text-on-surface">25.000</span>
-<span class="font-label-sm text-label-sm text-secondary font-medium">(~$6.25 USD)</span>
-</div>
-<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
-<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
-<span class="font-label-md text-label-md text-on-surface font-semibold">20</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">min</span>
 </div>
 <label class="relative inline-flex items-center cursor-pointer">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
 </label>
 </div>
-</article>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-display text-price-display text-on-surface">COP 25.000</span>
+<span class="font-body-sm text-body-sm text-outline">~$6.25 USD</span>
 </div>
-</section>
-<!-- Section: Editor Card (Focused Drawer for 'Manicure Semipermanente') -->
-<section class="p-6 md:p-8 rounded-lg bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_20px_40px_-8px_rgba(247,202,208,0.4)] flex flex-col gap-6">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 bg-surface-container-low/40 p-4 rounded-DEFAULT">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary text-[24px]">edit_note</span>
-<div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface">Panel de Edición Detallada</h2>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Modificando actualmente: Manicure Semipermanente</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-secondary-container transition-colors" onclick="openEditDrawer('Retiro Cuidadoso &amp; Keratina', 25000, 20)">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+          Editar
+        </button>
 </div>
 </div>
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[14px]">verified</span>
-            Membresía Pétalo Club Signature (Cupo mensual)
-          </div>
 </div>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-5" onsubmit="event.preventDefault();">
-<!-- Service Name -->
-<div class="flex flex-col gap-1.5 md:col-span-2">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="inputServiceName">Nombre del Servicio</label>
-<input class="h-[52px] px-4 rounded-DEFAULT bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm transition-all" id="inputServiceName" type="text" value="Manicure Semipermanente"/>
-</div>
-<!-- Sensorial Description -->
-<div class="flex flex-col gap-1.5 md:col-span-2">
+<!-- INTERACTIVE INLINE QUICK-EDIT DRAWER -->
+<div class="hidden bg-surface-container-lowest rounded-DEFAULT p-4 shadow-lg flex-col space-y-4" id="quick-edit-sheet">
 <div class="flex items-center justify-between">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="inputServiceDesc">Descripción Sensorial (Visible en App)</label>
-<span class="font-label-sm text-label-sm text-outline">103 / 150 caracteres</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="edit-service-name">Edición Rápida</h3>
 </div>
-<textarea class="p-4 rounded-DEFAULT bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm transition-all resize-none leading-relaxed" id="inputServiceDesc" rows="3">Limpieza rusa, cutícula pulida y esmaltado semipermanente de alta durabilidad con brillo cristal.</textarea>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant" onclick="closeEditDrawer()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
 </div>
-<!-- Price COP -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="inputServicePrice">Precio Base (COP)</label>
-<div class="relative">
-<span class="absolute left-4 top-1/2 -translate-y-1/2 font-label-md text-label-md text-outline">$</span>
-<input class="h-[52px] pl-8 pr-4 rounded-DEFAULT bg-surface-container-low text-on-surface font-price-display text-price-display focus:bg-surface-container-lowest focus:outline-none shadow-sm w-full" id="inputServicePrice" type="text" value="60.000"/>
-</div>
-</div>
-<!-- Auto USD Equivalent & Duration -->
 <div class="grid grid-cols-2 gap-3">
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="inputDuration">Duración</label>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Precio (COP)</label>
 <div class="relative">
-<input class="h-[52px] px-4 rounded-DEFAULT bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:bg-surface-container-lowest focus:outline-none shadow-sm w-full" id="inputDuration" type="number" value="60"/>
-<span class="absolute right-3 top-1/2 -translate-y-1/2 font-body-sm text-body-sm text-outline">min</span>
+<input class="w-full h-11 px-3 bg-surface-container-low rounded-DEFAULT font-label-md text-label-md text-on-surface focus:outline-none" id="edit-input-cop" oninput="calculateUSD(this.value)" step="5000" type="number" value="60000"/>
 </div>
 </div>
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface font-semibold">Aprox. USD</label>
-<div class="h-[52px] px-4 rounded-DEFAULT bg-surface-container flex items-center justify-between text-secondary">
-<span class="font-label-lg text-label-lg font-bold">~$15.00</span>
-<span class="font-label-sm text-label-sm text-outline">USD</span>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Equivalente USD</label>
+<div class="h-11 px-3 bg-surface-container-high rounded-DEFAULT flex items-center font-label-md text-label-md text-secondary font-semibold">
+<span id="edit-display-usd">$15.00 USD</span>
 </div>
 </div>
 </div>
-<!-- Specialist Assignation -->
-<div class="flex flex-col gap-2 md:col-span-2 pt-2">
-<label class="font-label-md text-label-md text-on-surface font-semibold">Especialistas Certificadas en Turno (Calle 85)</label>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-<!-- Valeria -->
-<label class="p-3 rounded-DEFAULT bg-surface-container-low hover:bg-secondary-container/30 flex items-center gap-3 cursor-pointer transition-colors shadow-sm">
-<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
-<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-label-sm text-label-sm text-on-secondary-fixed font-bold">VM</div>
-<div class="min-w-0">
-<span class="font-label-md text-label-md text-on-surface block font-medium truncate">Valeria Martínez</span>
-<span class="font-label-sm text-label-sm text-secondary block">Master Gel</span>
-</div>
-</label>
-<!-- Camila -->
-<label class="p-3 rounded-DEFAULT bg-surface-container-low hover:bg-secondary-container/30 flex items-center gap-3 cursor-pointer transition-colors shadow-sm">
-<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
-<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-label-sm text-label-sm text-on-secondary-fixed font-bold">CR</div>
-<div class="min-w-0">
-<span class="font-label-md text-label-md text-on-surface block font-medium truncate">Camila Restrepo</span>
-<span class="font-label-sm text-label-sm text-secondary block">Semi &amp; Care</span>
-</div>
-</label>
-<!-- Sofía -->
-<label class="p-3 rounded-DEFAULT bg-surface-container-low hover:bg-secondary-container/30 flex items-center gap-3 cursor-pointer transition-colors shadow-sm">
-<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
-<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-label-sm text-label-sm text-on-secondary-fixed font-bold">SG</div>
-<div class="min-w-0">
-<span class="font-label-md text-label-md text-on-surface block font-medium truncate">Sofía Gómez</span>
-<span class="font-label-sm text-label-sm text-secondary block">Nail Artist</span>
-</div>
-</label>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Duración Estimada</label>
+<div class="grid grid-cols-4 gap-2">
+<button class="duration-pill py-2 rounded-DEFAULT bg-surface-container-low font-label-sm text-label-sm text-on-surface font-medium hover:bg-secondary-container" onclick="selectDuration(20)" type="button">20m</button>
+<button class="duration-pill py-2 rounded-DEFAULT bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold" onclick="selectDuration(60)" type="button">60m</button>
+<button class="duration-pill py-2 rounded-DEFAULT bg-surface-container-low font-label-sm text-label-sm text-on-surface font-medium hover:bg-secondary-container" onclick="selectDuration(75)" type="button">75m</button>
+<button class="duration-pill py-2 rounded-DEFAULT bg-surface-container-low font-label-sm text-label-sm text-on-surface font-medium hover:bg-secondary-container" onclick="selectDuration(120)" type="button">120m</button>
 </div>
 </div>
-<!-- Bottom Action Buttons inside drawer -->
-<div class="md:col-span-2 pt-4 flex items-center justify-end gap-3">
-<button class="px-5 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors" type="button">
-              Descartar
-            </button>
-<button class="px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_8px_18px_rgba(31,20,24,0.25)] hover:bg-on-background transition-all flex items-center gap-2" id="saveServiceBtn" type="button">
-<span class="material-symbols-outlined text-secondary-fixed text-[18px]">save</span>
-              Guardar Cambios
-            </button>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-12 bg-primary text-on-primary rounded-full font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md active:scale-95 transition-transform" onclick="saveChanges()">
+<span>Guardar &amp; Sincronizar</span>
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+<button class="h-12 px-4 bg-surface-container-low text-on-surface rounded-full font-label-md text-label-md font-semibold" onclick="closeEditDrawer()">
+        Cancelar
+      </button>
 </div>
-</form>
-</section>
-<!-- Section: Diseños de Autor & Lookbook Portfolio -->
-<section class="flex flex-col gap-5 pt-4">
-<div class="flex items-center justify-between px-1">
+</div>
+<!-- SECCIÓN 2: DISEÑOS DE AUTOR & LOOKBOOK -->
+<div class="flex flex-col space-y-4 pt-2" id="section-disenos">
+<div class="flex items-center justify-between">
 <div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface">Diseños de Autor &amp; Lookbook</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Opciones adicionales de nail art aplicables por tus clientas al agendar.</p>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Diseños de Autor</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Add-ons de nail art exclusivos para clientas</p>
 </div>
-<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline flex items-center gap-1" type="button">
-            Ver todas (18 en book)
-            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-secondary-container/40 px-2.5 py-1 rounded-full">
+        4 en Lookbook
+      </span>
+</div>
+<!-- Lookbook 2-Column Grid -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Design 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden shadow-sm flex flex-col group">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Close up photography of delicate soft pink manicured nails with glowing subtle champagne chrome powder finish and tiny sparkling light glints, quiet luxury aesthetic, editorial beauty salon" src="../img/7e5aaec08b18.jpg"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-primary/80 backdrop-blur-md rounded-full text-on-primary font-label-sm text-[10px]">
+            Activo
+          </div>
+<button class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
 </button>
 </div>
-<!-- Nail Designs Mosaic Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<!-- Design Card 1 -->
-<article class="p-3.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex gap-3.5 items-center transition-all group">
-<img class="w-20 h-20 rounded-DEFAULT object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Close up photograph of exquisite high luxury chrome pink nails with soft specular gleams on delicate fingers over pale silk linen, calm atelier lighting Bogotá" src="../img/238cb2b60a10.jpg"/>
-<div class="flex-1 min-w-0 flex flex-col justify-between h-full">
-<div class="flex items-start justify-between gap-1">
+<div class="p-3 flex flex-col justify-between flex-1">
 <div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Rosa Pétalo Chrome</h3>
-<span class="font-body-sm text-body-sm text-secondary">Cromado Suave · Almendra</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">Rosa Pétalo Chrome</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">+20 min de servicio</p>
 </div>
-<!-- Toggle -->
-<label class="relative inline-flex items-center cursor-pointer shrink-0">
-<input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-secondary"></div>
-</label>
-</div>
-<div class="flex items-center justify-between mt-2 pt-1">
-<span class="font-label-md text-label-md text-on-surface font-bold">+COP 25.000</span>
-<span class="font-label-sm text-label-sm text-outline">+20 min</span>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-low/50 rounded-lg px-2 py-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">+COP 25k</span>
+<span class="font-body-sm text-[10px] text-outline">+$6.25</span>
 </div>
 </div>
-</article>
-<!-- Design Card 2 -->
-<article class="p-3.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex gap-3.5 items-center transition-all group">
-<img class="w-20 h-20 rounded-DEFAULT object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Minimalist French manicure with ultrafine delicate black micro lines on clean natural polished square nails, editorial quiet luxury composition" src="../img/0c310f32dbc6.jpg"/>
-<div class="flex-1 min-w-0 flex flex-col justify-between h-full">
-<div class="flex items-start justify-between gap-1">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">French Black Minimal</h3>
-<span class="font-body-sm text-body-sm text-secondary">Líneas Finas · Square</span>
 </div>
-<label class="relative inline-flex items-center cursor-pointer shrink-0">
-<input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-secondary"></div>
-</label>
-</div>
-<div class="flex items-center justify-between mt-2 pt-1">
-<span class="font-label-md text-label-md text-on-surface font-bold">+COP 15.000</span>
-<span class="font-label-sm text-label-sm text-outline">+15 min</span>
-</div>
-</div>
-</article>
-<!-- Design Card 3 -->
-<article class="p-3.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex gap-3.5 items-center transition-all group">
-<img class="w-20 h-20 rounded-DEFAULT object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Ethereal iridescent pearl glazed velvet nails reflecting soft pink and gold light on porcelain clean background, luxury nail salon aesthetic" src="../img/4389bb64aa1b.jpg"/>
-<div class="flex-1 min-w-0 flex flex-col justify-between h-full">
-<div class="flex items-start justify-between gap-1">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Glazed Pearl Velvet</h3>
-<span class="font-body-sm text-body-sm text-secondary">Perlado · Squoval</span>
-</div>
-<label class="relative inline-flex items-center cursor-pointer shrink-0">
-<input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-secondary"></div>
-</label>
-</div>
-<div class="flex items-center justify-between mt-2 pt-1">
-<span class="font-label-md text-label-md text-on-surface font-bold">+COP 20.000</span>
-<span class="font-label-sm text-label-sm text-outline">+20 min</span>
-</div>
-</div>
-</article>
-<!-- Design Card 4 -->
-<article class="p-3.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-xl shadow-sm hover:shadow-[0_8px_24px_-4px_rgba(247,202,208,0.3)] flex gap-3.5 items-center transition-all group">
-<img class="w-20 h-20 rounded-DEFAULT object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Deep rich burgundy wine sculpted chrome nails with mirror reflection on elegant female hands, haute joaillerie lighting" src="../img/65b73e52e4db.jpg"/>
-<div class="flex-1 min-w-0 flex flex-col justify-between h-full">
-<div class="flex items-start justify-between gap-1">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Wine Chrome Sculpt</h3>
-<span class="font-body-sm text-body-sm text-secondary">Alta Pigmentación · Coffin</span>
-</div>
-<label class="relative inline-flex items-center cursor-pointer shrink-0">
-<input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-secondary"></div>
-</label>
-</div>
-<div class="flex items-center justify-between mt-2 pt-1">
-<span class="font-label-md text-label-md text-on-surface font-bold">+COP 35.000</span>
-<span class="font-label-sm text-label-sm text-outline">+30 min</span>
-</div>
-</div>
-</article>
-</div>
-<!-- Drag & Drop Upload Tile -->
-<div class="p-6 rounded-DEFAULT bg-surface-container-low/70 hover:bg-secondary-container/20 flex flex-col items-center justify-center text-center cursor-pointer transition-all">
-<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm mb-2">
-<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
-</div>
-<span class="font-label-md text-label-md text-on-surface font-semibold">+ Cargar Nuevo Diseño de Autor</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Arrastra fotografías en alta resolución (.JPG, .PNG) o haz clic para explorar. Se publicará inmediatamente en el lookbook de la app.</p>
-</div>
-</section>
-</div>
-<!-- RIGHT COLUMN: 35% width (lg:col-span-4) - Realtime Client Mobile Mockup -->
-<aside aria-label="Vista previa en dispositivo móvil" class="lg:col-span-4 sticky top-20 flex flex-col items-center">
-<!-- Top header for live preview -->
-<div class="w-full flex items-center justify-between mb-3 px-2">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[20px]">phone_iphone</span>
-<h2 class="font-label-md text-label-md text-on-surface font-bold tracking-tight">Vista Previa · App Clienta</h2>
-</div>
-<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-secondary shadow-sm">
-<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
-<span class="font-label-sm text-label-sm font-semibold">En Vivo</span>
-</div>
-</div>
-<!-- Realistic iPhone Mockup Frame -->
-<div class="relative w-full max-w-[340px] rounded-lg bg-inverse-surface p-3.5 shadow-[0_24px_50px_-12px_rgba(31,20,24,0.35)]">
-<!-- iPhone Screen Canvas -->
-<div class="relative w-full rounded-DEFAULT bg-surface overflow-hidden flex flex-col text-on-surface select-none">
-<!-- Dynamic Island & Status Bar -->
-<div class="pt-3 px-5 pb-2 flex items-center justify-between bg-surface-container-low/70">
-<span class="font-label-sm text-label-sm font-bold text-on-surface">9:41</span>
-<div class="w-20 h-4 bg-inverse-surface rounded-full flex items-center justify-center">
-<div class="w-2 h-2 rounded-full bg-surface-container-lowest/30 mr-1.5"></div>
-</div>
-<div class="flex items-center gap-1 text-on-surface">
-<span class="material-symbols-outlined text-[13px]">signal_cellular_alt</span>
-<span class="material-symbols-outlined text-[13px]">wifi</span>
-<span class="material-symbols-outlined text-[14px]">battery_full</span>
-</div>
-</div>
-<!-- In-App Header -->
-<div class="px-4 py-3 bg-surface-container-low/50 backdrop-blur-md flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-on-surface">arrow_back_ios_new</span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Pétalo Atelier</span>
-</div>
-<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-<span class="material-symbols-outlined text-[16px]">local_mall</span>
-</div>
-</div>
-<!-- Mockup Content: Booking Flow Step -->
-<div class="p-4 flex flex-col gap-4 overflow-y-auto">
-<div class="flex flex-col gap-0.5">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Paso 1 de 3 · Calle 85</span>
-<h4 class="font-headline-sm text-headline-sm text-on-surface">Selecciona tu Experiencia</h4>
-</div>
-<!-- The Highlighted Target Card in Client App -->
-<div class="p-3.5 rounded-DEFAULT bg-surface-container-lowest backdrop-blur-md shadow-[0_10px_25px_-5px_rgba(247,202,208,0.45)] flex flex-col gap-3">
-<div class="flex items-start justify-between gap-2">
-<div>
-<div class="flex items-center gap-1.5">
-<h5 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight" id="previewTitle">Manicure Semipermanente</h5>
-</div>
-<span class="inline-block mt-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
-                    Bestseller
-                  </span>
-</div>
-<div class="text-right">
-<span class="font-price-display text-price-display text-on-surface block leading-tight" id="previewPrice">$60.000</span>
-<span class="font-label-sm text-label-sm text-outline">COP</span>
-</div>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug" id="previewDesc">
-                Limpieza rusa, cutícula pulida y esmaltado semipermanente de alta durabilidad con brillo cristal.
-              </p>
-<div class="flex items-center justify-between pt-1">
-<div class="flex items-center gap-1 text-on-surface-variant">
-<span class="material-symbols-outlined text-[14px]">schedule</span>
-<span class="font-label-sm text-label-sm font-semibold" id="previewDuration">60 min</span>
-</div>
-<button class="px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shadow-sm flex items-center gap-1" type="button">
-                  Seleccionar
-                  <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+<!-- Design 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden shadow-sm flex flex-col group">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Minimalist French manicure with delicate slim black tips on natural porcelain sheer nails, clean editorial studio lighting, hands of a sophisticated woman, elegant aesthetic" src="../img/651ed8fe1f66.jpg"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-primary/80 backdrop-blur-md rounded-full text-on-primary font-label-sm text-[10px]">
+            Activo
+          </div>
+<button class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">favorite</span>
 </button>
 </div>
-</div>
-<!-- Subsequent Mock Cards in Client App -->
-<div class="p-3 rounded-DEFAULT bg-surface-container-lowest/60 opacity-70 flex items-center justify-between">
+<div class="p-3 flex flex-col justify-between flex-1">
 <div>
-<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Acrílicas / Gel Sculpt</span>
-<span class="font-body-sm text-body-sm text-outline">120 min</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">French Black Minimal</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">+15 min de servicio</p>
 </div>
-<span class="font-price-display text-price-display text-on-surface">$130.000</span>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-low/50 rounded-lg px-2 py-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">+COP 15k</span>
+<span class="font-body-sm text-[10px] text-outline">+$3.75</span>
 </div>
-<div class="p-3 rounded-DEFAULT bg-surface-container-lowest/60 opacity-70 flex items-center justify-between">
+</div>
+</div>
+<!-- Design 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden shadow-sm flex flex-col group">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Haute couture glazed pearl velvet effect nails with iridescent reflection and subtle golden foil particles on nude oval nails, luxury spa aesthetic, soft studio lighting" src="../img/a870b1cd2204.jpg"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-primary/80 backdrop-blur-md rounded-full text-on-primary font-label-sm text-[10px]">
+            Activo
+          </div>
+<button class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="p-3 flex flex-col justify-between flex-1">
 <div>
-<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Pedicure Spa</span>
-<span class="font-body-sm text-body-sm text-outline">75 min</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">Glazed Pearl Velvet</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">+20 min de servicio</p>
 </div>
-<span class="font-price-display text-price-display text-on-surface">$75.000</span>
-</div>
-<!-- Add-on Lookbook Carousel Snippet -->
-<div class="flex flex-col gap-2 pt-1">
-<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wider">Añade Arte de Autor</span>
-<div class="flex gap-2 overflow-x-hidden">
-<div class="w-24 p-2 rounded-DEFAULT bg-surface-container-lowest shadow-xs flex flex-col gap-1.5 shrink-0">
-<img class="w-full h-12 rounded object-cover" data-alt="Nail art portrait of chrome pink nails on model hands, luxury aesthetic studio shot" src="../img/926ec61fd6b0.jpg"/>
-<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate leading-tight">Rosa Chrome</span>
-<span class="font-label-sm text-label-sm text-secondary font-bold">+$25.000</span>
-</div>
-<div class="w-24 p-2 rounded-DEFAULT bg-surface-container-lowest shadow-xs flex flex-col gap-1.5 shrink-0">
-<img class="w-full h-12 rounded object-cover" data-alt="Nail art portrait of fine french micro black tips, minimalist quiet luxury" src="../img/a58eac41a471.jpg"/>
-<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate leading-tight">French Black</span>
-<span class="font-label-sm text-label-sm text-secondary font-bold">+$15.000</span>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-low/50 rounded-lg px-2 py-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">+COP 20k</span>
+<span class="font-body-sm text-[10px] text-outline">+$5.00</span>
 </div>
 </div>
 </div>
+<!-- Design 4 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden shadow-sm flex flex-col group">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="High gloss deep burgundy wine chrome almond nails with liquid glass mirror finish, dramatic editorial lighting, quiet luxury atelier vibe" src="../img/c905e9f43e60.jpg"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-primary/80 backdrop-blur-md rounded-full text-on-primary font-label-sm text-[10px]">
+            Activo
+          </div>
+<button class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">favorite</span>
+</button>
 </div>
-<!-- iPhone Home Indicator Bar -->
-<div class="py-2 flex justify-center bg-surface-container-low/50">
-<div class="w-28 h-1 bg-on-surface-variant/30 rounded-full"></div>
+<div class="p-3 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">Wine Chrome Sculpt</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">+30 min de servicio</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-low/50 rounded-lg px-2 py-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">+COP 35k</span>
+<span class="font-body-sm text-[10px] text-outline">+$8.75</span>
 </div>
 </div>
 </div>
-<!-- Live Sync Footnote -->
-<div class="mt-4 px-3 py-2 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center gap-2 text-center">
-<span class="material-symbols-outlined text-secondary text-[16px]">sensors</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Reflejo en vivo de lo que ven tus clientas en Bogotá</span>
 </div>
-</aside>
+<!-- Prominent Upload CTA Button -->
+<button class="w-full h-14 bg-secondary-container/80 hover:bg-secondary-container active:scale-[0.99] transition-all rounded-full flex items-center justify-between px-5 text-on-secondary-container shadow-sm" onclick="triggerUploadModal()">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-on-secondary-container text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">add_a_photo</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-left">Cargar Nuevo Diseño de Autor</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-secondary-container">arrow_forward</span>
+</button>
+</div>
+<!-- VISTA PREVIA CLIENTA EXPANDABLE CARD -->
+<div class="bg-surface-container-low rounded-DEFAULT p-4 flex flex-col space-y-3">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleClientPreview()">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">visibility</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Vista Previa Clienta</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Así lo visualiza Sofía Restrepo al agendar</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform" id="preview-chevron">expand_more</span>
+</div>
+<div class="hidden pt-3 border-t-0 flex flex-col space-y-3" id="preview-content">
+<!-- Mini Client Card Simulation -->
+<div class="bg-surface-container-lowest p-3.5 rounded-DEFAULT shadow-sm flex items-center gap-3">
+<div class="w-14 h-14 rounded-lg bg-surface-container-highest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Delicate elegant hand showcase with manicured blush pink nails holding a soft silk fabric, soft daylight, luxury spa setting" src="../img/60433f0d5515.jpg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-[14px] text-on-surface truncate">Manicure Semipermanente</h4>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">COP 60.000</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-1 mt-0.5">Incluye limado anatómico, retiro de cutícula y esmaltado de alta gama.</p>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-[10px] font-semibold text-on-secondary-container">60 min</span>
+<span class="font-body-sm text-[10px] text-outline">Calle 85 Atelier</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-[11px] text-center text-outline">
+        Sincronización instantánea con el flujo de reservas iOS &amp; Web
+      </p>
+</div>
 </div>
 </div>
 <script>
-  // Dynamic Realtime Mirroring between Left Edit Drawer and Right iPhone Preview
-  const inputName = document.getElementById('inputServiceName');
-  const inputDesc = document.getElementById('inputServiceDesc');
-  const inputPrice = document.getElementById('inputServicePrice');
-  const inputTablePrice = document.getElementById('servicePriceInput');
-  const inputDuration = document.getElementById('inputDuration');
+  function switchCatalogTab(tab) {
+    const secServicios = document.getElementById('section-servicios');
+    const secDisenos = document.getElementById('section-disenos');
+    const btnServicios = document.getElementById('tab-btn-servicios');
+    const btnDisenos = document.getElementById('tab-btn-disenos');
 
-  const previewTitle = document.getElementById('previewTitle');
-  const previewDesc = document.getElementById('previewDesc');
-  const previewPrice = document.getElementById('previewPrice');
-  const previewDuration = document.getElementById('previewDuration');
-  const saveBtn = document.getElementById('saveServiceBtn');
-
-  if (inputName && previewTitle) {
-    inputName.addEventListener('input', (e) => {
-      previewTitle.textContent = e.target.value || 'Servicio';
-    });
+    if (tab === 'servicios') {
+      secServicios.classList.remove('hidden');
+      secDisenos.classList.remove('hidden'); // keep lookbook visible or scroll
+      btnServicios.className = 'py-2.5 rounded-full font-label-md text-label-md font-semibold text-on-primary bg-primary shadow-sm flex items-center justify-center gap-1.5 transition-all';
+      btnDisenos.className = 'py-2.5 rounded-full font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5 transition-all';
+      secServicios.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      btnDisenos.className = 'py-2.5 rounded-full font-label-md text-label-md font-semibold text-on-primary bg-primary shadow-sm flex items-center justify-center gap-1.5 transition-all';
+      btnServicios.className = 'py-2.5 rounded-full font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5 transition-all';
+      secDisenos.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
-  if (inputDesc && previewDesc) {
-    inputDesc.addEventListener('input', (e) => {
-      previewDesc.textContent = e.target.value || 'Descripción del servicio en atelier';
-    });
+  function openEditDrawer(title, copPrice, duration) {
+    const drawer = document.getElementById('quick-edit-sheet');
+    const titleEl = document.getElementById('edit-service-name');
+    const copInput = document.getElementById('edit-input-cop');
+    
+    titleEl.textContent = title;
+    copInput.value = copPrice;
+    calculateUSD(copPrice);
+    drawer.classList.remove('hidden');
+    drawer.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
-  if (inputPrice && previewPrice) {
-    inputPrice.addEventListener('input', (e) => {
-      previewPrice.textContent = '$' + (e.target.value || '0');
-      if (inputTablePrice) inputTablePrice.value = e.target.value;
-    });
+  function closeEditDrawer() {
+    document.getElementById('quick-edit-sheet').classList.add('hidden');
   }
 
-  if (inputTablePrice && previewPrice && inputPrice) {
-    inputTablePrice.addEventListener('input', (e) => {
-      previewPrice.textContent = '$' + (e.target.value || '0');
-      inputPrice.value = e.target.value;
-    });
+  function calculateUSD(copVal) {
+    const numeric = parseFloat(copVal) || 0;
+    const usd = (numeric / 4000).toFixed(2);
+    document.getElementById('edit-display-usd').textContent = `$${usd} USD`;
   }
 
-  if (inputDuration && previewDuration) {
-    inputDuration.addEventListener('input', (e) => {
-      previewDuration.textContent = (e.target.value || '0') + ' min';
+  function selectDuration(mins) {
+    document.querySelectorAll('.duration-pill').forEach(btn => {
+      btn.className = 'duration-pill py-2 rounded-DEFAULT bg-surface-container-low font-label-sm text-label-sm text-on-surface font-medium hover:bg-secondary-container';
     });
+    const clicked = event.currentTarget;
+    clicked.className = 'duration-pill py-2 rounded-DEFAULT bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold';
   }
 
-  if (saveBtn) {
-    saveBtn.addEventListener('click', () => {
-      const originalText = saveBtn.innerHTML;
-      saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span> Guardando...';
-      saveBtn.disabled = true;
-      setTimeout(() => {
-        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> ¡Sincronizado!';
-        setTimeout(() => {
-          saveBtn.innerHTML = originalText;
-          saveBtn.disabled = false;
-        }, 1800);
-      }, 600);
-    });
+  function saveChanges() {
+    closeEditDrawer();
+    const banner = document.getElementById('sync-banner');
+    banner.classList.remove('hidden');
+    banner.classList.add('animate-pulse');
+    setTimeout(() => {
+      banner.classList.remove('animate-pulse');
+    }, 1200);
   }
-</script></main></div></body></html>
+
+  function triggerUploadModal() {
+    alert("Abriendo galería para cargar nuevo diseño de alta resolución para Pétalo Atelier...");
+  }
+
+  function toggleClientPreview() {
+    const previewContent = document.getElementById('preview-content');
+    const chevron = document.getElementById('preview-chevron');
+    const isHidden = previewContent.classList.contains('hidden');
+    
+    if (isHidden) {
+      previewContent.classList.remove('hidden');
+      chevron.style.transform = 'rotate(180deg)';
+    } else {
+      previewContent.classList.add('hidden');
+      chevron.style.transform = 'rotate(0deg)';
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-2xl shadow-[0_-4px_20px_rgba(31,20,24,0.05)]" data-active-classes="text-on-surface font-semibold"><div class="flex items-center justify-around h-16 px-space-xs max-w-md mx-auto"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors" data-path="agenda" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm tracking-tight">Agenda</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 transition-colors text-on-surface font-semibold" data-path="servicios" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-sm text-label-sm tracking-tight">Servicios</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors" data-path="boutique" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="font-label-sm text-label-sm tracking-tight">Boutique</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors" data-path="finanzas" href="#"><span class="material-symbols-outlined text-[22px]">payments</span><span class="font-label-sm text-label-sm tracking-tight">Finanzas</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors" data-path="ajustes" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-sm text-label-sm tracking-tight">Ajustes</span></a></div></nav></body></html>

@@ -4,15 +4,11 @@
 > La carpeta raíz (`index.html`, `css/`, `js/`) es una primera versión propia que se descartó.
 
 ### Prototipo `demo/`
-- 7 pantallas de la clienta (inicio, catálogo, reserva con depósito, confirmación, mis citas, tienda, perfil) y 4 del panel de la dueña (servicios y precios, reportes, depósito y WhatsApp, tienda y gift cards).
-- `demo/screens/` son las pantallas exportadas de Stitch (Tailwind por CDN y fotos alojadas por Stitch, requieren internet).
-- `demo/js/wire.js` conecta los botones principales; `demo/js/shell.js` es el marco con selector Clienta / Dueña.
-- Se puede abrir una pantalla directa con `demo/index.html#reportes`.
-- Sin pantallas todavía: agenda de hoy, calendario, clientas y equipo (el menú muestra un aviso).
-
-
-Demo comercial (salón ficticio) para vender apps a negocios pequeños de uñas.
-Tema claro, estilo cristal líquido, hero 3D (mano con uñas que cambian de color).
+- 7 pantallas de la clienta (inicio, catálogo, reserva con depósito, confirmación, mis citas, tienda, perfil) y 5 del panel de la dueña en versión celular (agenda de hoy, servicios y diseños, boutique y gift cards, finanzas, ajustes y WhatsApp).
+- `demo/screens/` son las pantallas exportadas de Stitch; `agenda.html` se creó aparte con el mismo sistema de diseño. Tailwind y las fuentes se cargan por CDN; las fotos están en `demo/img/`.
+- `demo/js/wire.js` conecta los botones y el estado compartido; `demo/js/shell.js` es el marco con selector Clienta / Dueña y botón para reiniciar.
+- Funciona de punta a punta: la cita que reserva la clienta aparece en la agenda de la dueña, el precio que cambia la dueña se ve en la app de la clienta, y Finanzas y Boutique tienen filtros.
+- Se puede abrir una pantalla directa con `demo/index.html#agenda`.
 
 ## Qué incluye
 - Catálogo de diseños con filtros por estilo y forma, favoritos y precio con equivalente en USD
